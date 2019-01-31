@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(IMG_3399.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+}
+
+/* .project-page {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(IMG_3399.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+} */
+
+.front-page-text {
+  color: rgba(163, 153, 153, 0.664);
+  font-family: 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
+  /* font-weight: bold; */
+  font-size: 30px;
+  text-rendering: optimizeLegibility;
+  position: absolute;
+  top: 25%;
+  right: 1%;
+  /* float: left; */
+  /* transform: translate(20%); */
+}
+.quote-part-2 {
+  transform: translate(4%);
+}
+
+.my-name {
+  transform: translate(4%, 100%);
+}

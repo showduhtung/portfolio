@@ -16,5 +16,5 @@ app.get('*', function(req, res, next) {
 });
 
 app.listen(port, function() {
-  console.log(`Portfolio server listening on port ${port}`);
+  console.log(`My Personal Portfolio is listening on port ${port}`);
 });
