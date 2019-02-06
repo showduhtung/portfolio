@@ -13,13 +13,19 @@ html {
   height: 100vh;
 }
 
-/* .project-page {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(IMG_3399.jpg);
-  background-size: cover;
-  background-position: center;
+.home-page {
   height: 100vh;
-} */
+  width: 100%;
+  /* background-color: greenyellow; */
+}
+
+.project-page {
+  position: absolute;
+  color: white;
+  /* background-color: aquamarine; */
+  height: 100vh;
+  width: 100%;
+}
 
 .front-page-text {
   color: rgba(163, 153, 153, 0.664);
@@ -27,16 +33,23 @@ html {
   /* font-weight: bold; */
   font-size: 30px;
   text-rendering: optimizeLegibility;
-  position: absolute;
-  top: 25%;
-  right: 1%;
-  /* float: left; */
-  /* transform: translate(20%); */
+  position: relative;
+  /* display: flex; */
+  float: right;
+  /* background-color: blue; */
 }
 .quote-part-2 {
-  transform: translate(4%);
+  float: right;
+  /* background-color: red; */
 }
 
 .my-name {
-  transform: translate(4%, 100%);
+  transform: translate(0, 100%);
+  float: right;
+  /* background-color: purple; */
 }
+
+/* .skills-resume {
+  color: white;
+  position: absolute;
+} */

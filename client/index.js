@@ -16,12 +16,12 @@ ReactDOM.render(
     <div className="project-page">
       <ProjectPage />
     </div>
-    <div>
+    {/* <div className="skills-resume">
       <SkillsResume />
     </div>
     <div>
       <AboutMe />
-    </div>
+    </div> */}
   </div>,
   document.getElementById('app')
 );
