@@ -1,6 +1,4 @@
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -11,45 +9,62 @@ html {
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  /* margin-top: 2rem; */
+  font-size: 16px;
+  /* line-height: 1rem; */
 }
 
 .home-page {
   height: 100vh;
   width: 100%;
-  /* background-color: greenyellow; */
+}
+.front-page-text {
+  color: rgba(163, 153, 153, 0.664);
+  font-family: 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
+  font-size: 1.875em;
+  text-rendering: optimizeLegibility;
+  float: right;
+}
+.quote-part-2 {
+  float: right;
+}
+.my-name {
+  transform: translate(0, 100%);
+  float: right;
+}
+
+.container {
+  color: white;
+}
+
+.menu {
+  background: #aaa;
+  display: flex;
+  font-size: 3em;
+  justify-content: space-evenly;
+  z-index: 1;
 }
 
 .project-page {
-  position: absolute;
   color: white;
-  /* background-color: aquamarine; */
+  /* background-color: red; */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  object-fit: cover;
+}
+
+.skills-resume {
+  color: white;
   height: 100vh;
   width: 100%;
 }
 
-.front-page-text {
-  color: rgba(163, 153, 153, 0.664);
-  font-family: 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
-  /* font-weight: bold; */
-  font-size: 30px;
-  text-rendering: optimizeLegibility;
-  position: relative;
-  /* display: flex; */
-  float: right;
-  /* background-color: blue; */
+.about-me {
+  /* color: green; */
+  height: 100vh;
+  width: 100%;
 }
-.quote-part-2 {
-  float: right;
-  /* background-color: red; */
-}
-
-.my-name {
-  transform: translate(0, 100%);
-  float: right;
-  /* background-color: purple; */
-}
-
-/* .skills-resume {
-  color: white;
-  position: absolute;
-} */

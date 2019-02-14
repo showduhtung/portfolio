@@ -1,50 +1,78 @@
 import React from 'react';
-import ProjectPage from './ProjectPage';
-import SkillsResume from './SkillsResume';
-import AboutMeContact from './AboutMeContact';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import AppBar from '@material-ui/core/AppBar';
+import { Link, animateScroll as scroll } from 'react-scroll';
+import toRenderProps from 'recompose/toRenderProps';
+import withState from 'recompose/withState';
+import { FaSmileWink } from 'react-icons/fa';
 import Button from '@material-ui/core/Button';
-import Toolbar from '@material-ui/core/Toolbar';
+
+const WithState = toRenderProps(withState('anchorEl', 'updateAnchorEl', null));
 
 const NavBar = props => {
+  console.log('navbar props', props);
   return (
-    <div>
-      <AppBar position="sticky" color="inherit">
-        <Toolbar>
-          <div id="container">
-            <div id="navbar">
-              <Button to="/projectPage">Projects</Button>
-              <Button to="/skillsResume"> Go to Skills and Resume Page</Button>
-              <Button to="/aboutMeContact">
-                Go to About Me and Contact Page
-              </Button>
-            </div>
-
-            {/* <div id="main-section">
-              <Route path="/projectPage" component={ProjectPage} />
-              <Route path="/skillsResume" component={SkillsResume} />
-              <Route path="/aboutMeContact" component={AboutMeContact} />
-            </div> */}
-          </div>
-        </Toolbar>
-      </AppBar>
-      {/* <Router>
-        <div id="container">
-          <div id="navbar">
-            <Link to="/projectPage"> Go to Project Page</Link>
-            <Link to="/skillsResume"> Go to Skills and Resume Page</Link>
-            <Link to="/aboutMeContact"> Go to About Me and Contact Page</Link>
-          </div>
-
-          <div id="main-section">
-            <Route path="/projectPage" component={ProjectPage} />
-            <Route path="/skillsResume" component={SkillsResume} />
-            <Route path="/aboutMeContact" component={AboutMeContact} />
-          </div>
-        </div>
-      </Router> */}
-    </div>
+    <WithState>
+      {({ anchorEl, updateAnchorEl }) => {
+        const handleClose = () => {
+          updateAnchorEl(null);
+        };
+        return (
+          <React.Fragment>
+            <Button>
+              <Link
+                activeClass="active"
+                to="homePage"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClose}
+              >
+                <FaSmileWink />
+              </Link>
+            </Button>
+            <Button>
+              <Link
+                activeClass="active"
+                to="projects"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClose}
+              >
+                Projects
+              </Link>
+            </Button>
+            <Button>
+              <Link
+                activeClass="active"
+                to="skills"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClose}
+              >
+                Skills
+              </Link>
+            </Button>
+            <Button>
+              <Link
+                activeClass="active"
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClose}
+              >
+                About Me
+              </Link>
+            </Button>
+          </React.Fragment>
+        );
+      }}
+    </WithState>
   );
 };
 
