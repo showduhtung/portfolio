@@ -81,8 +81,7 @@ class ProjectPage extends React.Component {
         this is the project page
         <div className="container">
           {tileData.map(tile => (
-            <div className="grid-tiles" key={tile.path} data-aos="fade-up">
-              >
+            <div className="grid-tiles" key={tile.path}>
               <a href={tile.href} target="_blank" rel="noopener noreferrer">
                 <img src={tile.path} className="img-box" />
               </a>
