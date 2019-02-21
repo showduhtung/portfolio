@@ -5,7 +5,7 @@ import ProjectPage from './components/ProjectPage';
 import SkillsResume from './components/SkillsResume';
 import AboutMe from './components/AboutMeContact';
 import NavBar from './components/Navbar';
-
+import { Controller, Scene } from 'react-scrollmagic';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 ReactDOM.render(
@@ -14,7 +14,7 @@ ReactDOM.render(
       <HomePage />
     </div>
     <div>
-      <StickyContainer className="container">
+      <StickyContainer className="stickycontainer">
         <Sticky>
           {({ style }) => {
             console.log('helloooo', style);
@@ -26,7 +26,7 @@ ReactDOM.render(
           }}
         </Sticky>
 
-        <div className="project-page" id="projects">
+        <div id="projects">
           <ProjectPage />
         </div>
 

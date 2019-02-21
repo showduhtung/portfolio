@@ -1,38 +1,55 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
 import { withStyles } from '@material-ui/core/styles';
 import GridList from '@material-ui/core/GridList';
 import GridListTile from '@material-ui/core/GridListTile';
-import GridListTileBar from '@material-ui/core/GridListTileBar';
-import IconButton from '@material-ui/core/IconButton';
-import StarBorderIcon from '@material-ui/icons/StarBorder';
+// import GridListTileBar from '@material-ui/core/GridListTileBar';
+// import IconButton from '@material-ui/core/IconButton';
+// import StarBorderIcon from '@material-ui/icons/StarBorder';
+// import Link from '@material-ui/core/Link';
+// import { Link } from 'react-router-dom';
+// import Button from '@material-ui/core/Button';
 // import tileData from './tileData';
 
 const tileData = [
   {
-    img: '/resources/img/IMG_3104.jpg',
+    path: '/resources/img/IMG_3104.jpg',
     title: 'Grace Shopper',
-    author: 'jill111',
-    featured: true,
+    author: 'Flying Irons',
+    href: 'https://github.com/Flying-Irons/Grace-Shopper',
+    h2: 'Grace Shopper',
+    span: 'A graceful shopping experience',
+    p:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
   },
   {
-    img: '/resources/img/IMG_3399.jpg',
+    path: '/resources/img/IMG_3399.jpg',
     title: 'Wolfram Beta',
-    author: 'director90',
+    author: 'showduhtung',
+    href: 'https://github.com/showduhtung/wolframBeta',
+    h2: 'Wolfram Beta',
+    span: 'An interactive problem solver',
+    p:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
   },
 
   {
-    img: '/resources/img/IMG_3301.jpg',
+    path: '/resources/img/IMG_3301.jpg',
     title: 'City Snapper',
-    author: 'Danson67',
+    author: 'Spied-Limes',
+    href: 'https://github.com/spied-limes/CitySnapper',
+    h2: 'City Snapper',
+    span: 'An interactive tourist adventure',
+    p:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
   },
 ];
 const styles = theme => ({
   root: {
-    display: 'flex',
+    display: 'block',
     objectFit: 'cover',
     justifyContent: 'space-evenly',
+    alignItems: 'center',
     overflow: 'hidden',
     backgroundColor: theme.palette.background.paper,
   },
@@ -41,6 +58,7 @@ const styles = theme => ({
     // Promote the list into his own layer on Chrome. This cost memory but helps keeping high FPS.
     // transform: 'translateZ(0)',
     objectFit: 'cover',
+    height: '604px',
   },
 
   title: {
@@ -50,63 +68,38 @@ const styles = theme => ({
     background:
       'linear-gradient(to top, rgba(0,0,0,0.7) 0%, rgba(0,0,0,0.3) 70%, rgba(0,0,0,0) 100%)',
   },
-  /* Styles applied to an `img` element child, if needed to ensure it covers the tile. */
-  imgFullHeight: {
-    height: '100%',
-    transform: 'translateX(-50%)',
-    position: 'relative',
-    left: '100%',
-    // objectFit: 'cover',
-  },
-  /* Styles applied to an `img` element child, if needed to ensure it covers the tile. */
-  imgFullWidth: {
-    width: '100%',
-    position: 'relative',
-    transform: 'translateY(-50%)',
-    top: '100%',
-    // objectFit: 'cover',
-  },
 });
 
-const ProjectPage = props => {
-  console.log('project page props: ', props);
-  const { classes } = props;
-  return (
-    <div>
-      This is the ProjectPage
-      <div>
-        <GridList
-          cellHeight={600}
-          cols={3}
-          imgFullHeight={classes.imgFullHeight}
-          imgFullWidth={classes.imgFullWidth}
-        >
+class ProjectPage extends React.Component {
+  render() {
+    console.log('project page this: ', this);
+    console.log('this.props: ', this.props);
+    console.log(tileData);
+
+    return (
+      <div className="project-page">
+        this is the project page
+        <div className="container">
           {tileData.map(tile => (
-            <GridListTile
-              // className={classes.gridList}
-              key={tile.img}
-              imgFullHeight={classes.imgFullHeight}
-              imgFullWidth={classes.imgFullWidth}
-            >
-              <img src={tile.img} />
-              <GridListTileBar
-                title={tile.title}
-                classes={{
-                  root: classes.titleBar,
-                  title: classes.title,
-                }}
-                actionIcon={
-                  <IconButton>
-                    <StarBorderIcon className={classes.title} />
-                  </IconButton>
-                }
-              />
-            </GridListTile>
+            <div className="grid-tiles" key={tile.path} data-aos="fade-up">
+              >
+              <a href={tile.href} target="_blank" rel="noopener noreferrer">
+                <img src={tile.path} className="img-box" />
+              </a>
+              <div className="content">
+                <h2>{tile.h2}</h2>
+                <span>{tile.span}</span>
+                <p>{tile.p}</p>
+                <a href={tile.href} target="_blank" rel="noopener noreferrer">
+                  <i className="fab fa-github fa-3x" />
+                </a>
+              </div>
+            </div>
           ))}
-        </GridList>
+        </div>
       </div>
-    </div>
-  );
-};
+    );
+  }
+}
 
 export default withStyles(styles)(ProjectPage);

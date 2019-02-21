@@ -15,29 +15,26 @@ html {
   /* margin-top: 2rem; */
   font-size: 16px;
   /* line-height: 1rem; */
+  display: flexbox;
 }
 
 .home-page {
   height: 100vh;
   width: 100%;
 }
-.front-page-text {
+.home-page .front-page-text {
   color: rgba(163, 153, 153, 0.664);
   font-family: 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
   font-size: 1.875em;
   text-rendering: optimizeLegibility;
   float: right;
 }
-.quote-part-2 {
+.home-page .front-page-text .quote-part-2 {
   float: right;
 }
-.my-name {
+.home-page .front-page-text .my-name {
   transform: translate(0, 100%);
   float: right;
-}
-
-.container {
-  color: white;
 }
 
 .menu {
@@ -53,18 +50,91 @@ html {
   /* background-color: red; */
   height: 100vh;
   width: 100%;
-  display: flex;
-  object-fit: cover;
+  display: box;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: 9.375em auto 0;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
+  grid-template-rows: auto 1fr auto;
+  grid-gap: 2.5em;
+  /* background: grey; */
+}
+
+.container .grid-tiles {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.375em;
+  margin: 0 auto;
+  transition: 0.5s;
+  /* background: blue; */
+}
+
+.container .grid-tiles .img-box {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.container .grid-tiles:hover .img-box {
+  opacity: 0.5;
+}
+
+.container .grid-tiles .img-box img {
+  width: 100%;
+}
+
+.container .grid-tiles .content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  bottom: -100%;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  background: linear-gradient(0deg, #4b4849, transparent);
+}
+
+.container .grid-tiles:hover .content {
+  bottom: 0;
+}
+
+.container .grid-tiles .content h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 20px;
+}
+
+.container .grid-tiles .content span {
+  font-size: 16px;
+}
+
+.container .grid-tiles .content p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+}
+.fa-github {
+  color: #ffffff;
+  padding: 0 10px;
 }
 
 .skills-resume {
   color: white;
   height: 100vh;
   width: 100%;
+  position: relative;
 }
 
 .about-me {
-  /* color: green; */
+  color: white;
   height: 100vh;
   width: 100%;
 }
