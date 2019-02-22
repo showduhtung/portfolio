@@ -7,7 +7,9 @@ import AboutMe from './components/AboutMeContact';
 import NavBar from './components/Navbar';
 import { Controller, Scene } from 'react-scrollmagic';
 import { StickyContainer, Sticky } from 'react-sticky';
+import AOS from 'aos';
 
+AOS.init({ offset: 500, duration: 600, easing: 'ease-in-sine', delay: 200 });
 ReactDOM.render(
   <div>
     <div className="home-page" id="homePage">
