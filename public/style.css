@@ -9,18 +9,14 @@ html {
   background-attachment: fixed;
   background-position: center;
   height: 100vh;
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
-  /* margin-top: 2rem; */
-  font-size: 16px;
-  /* line-height: 1rem; */
-  display: flexbox;
+  /* font-size: 16px; */
+  display: flex;
 }
 
 .home-page {
   height: 100vh;
-  width: 100%;
 }
 .home-page .front-page-text {
   color: rgba(163, 153, 153, 0.664);
@@ -40,7 +36,7 @@ html {
 .menu {
   background: #aaa;
   display: flex;
-  font-size: 3em;
+  font-size: 5em;
   justify-content: space-evenly;
   z-index: 1;
 }
@@ -48,9 +44,9 @@ html {
 .project-page {
   color: white;
   /* background-color: red; */
-  height: 100vh;
+  height: auto;
   width: 100%;
-  display: box;
+  /* display: absolute; */
 }
 
 .container {
@@ -60,7 +56,7 @@ html {
   height: auto;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(425px, 1fr));
-  grid-template-rows: auto 1fr auto;
+  grid-template-rows: auto;
   grid-gap: 2.5em;
   /* background: grey; */
 }
@@ -69,7 +65,7 @@ html {
   position: relative;
   overflow: hidden;
   border-radius: 0.375em;
-  margin: 0 auto;
+  /* margin: 0 auto; */
   transition: 0.5s;
   /* background: blue; */
 }
