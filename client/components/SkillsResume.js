@@ -1,7 +1,16 @@
 import React from 'react';
 
-const SkillsResume = props => {
-  return <div>This is the SkillsResume</div>;
-};
+export default class Skills extends React.Component {
+  componentDidMount() {
+    require('./anotherSkillChart.js');
+  }
 
-export default SkillsResume;
+  render() {
+    return (
+      <section className="skills">
+        <h3 id="skills">Skills</h3>
+        <svg width="960" height="2000" />
+      </section>
+    );
+  }
+}

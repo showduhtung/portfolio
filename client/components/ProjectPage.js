@@ -72,9 +72,9 @@ const styles = theme => ({
 
 class ProjectPage extends React.Component {
   render() {
-    console.log('project page this: ', this);
-    console.log('this.props: ', this.props);
-    console.log(tileData);
+    // console.log('project page this: ', this);
+    // console.log('this.props: ', this.props);
+    // console.log(tileData);
 
     return (
       <div className="project-page">

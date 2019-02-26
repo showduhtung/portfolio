@@ -8,7 +8,7 @@ import Button from '@material-ui/core/Button';
 const WithState = toRenderProps(withState('anchorEl', 'updateAnchorEl', null));
 
 const NavBar = props => {
-  console.log('navbar props', props);
+  // console.log('navbar props', props);
   return (
     <WithState>
       {({ anchorEl, updateAnchorEl }) => {

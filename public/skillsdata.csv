@@ -1,0 +1,33 @@
+id,value,color
+Skills,
+Skills.Front-End,
+Skills.Front-End.HTML5,4,#666547
+Skills.Front-End.CSS3/Sass/Bootstrap,3,#fb2e01
+Skills.Front-End.JavaScript ES6,4,#6fcb9f
+Skills.Front-End.AJAX,3,#77bfd1
+Skills.Front-End.JSON,3,#b9d982
+Skills.Front-End.JavaScript Frameworks,
+Skills.Front-End.JavaScript Frameworks.React,3,#00A0D2
+Skills.Front-End.JavaScript Frameworks.Angular,3,#00618A
+Skills.Front-End.JavaScript Frameworks.Backbone,3,#b10aff
+Skills.JavaScript Libraries,
+Skills.JavaScript Libraries.jQuery,3,#2a266e
+Skills.JavaScript Libraries.D3,2,#4e266e
+Skills.JavaScript Libraries.Socket IO,3,#70994c
+Skills.JavaScript Libraries.BabylonJS,2,#4c9951
+Skills.JavaScript Libraries.Passport,3,#edb27d
+Skills.JavaScript Libraries.Lodash/Underscore,4,#edcd7d
+Skills.Back-End,
+Skills.Back-End.Node/Express,4,#00A0D2
+Skills.Back-End.REST APIs,3,#d24300
+Skills.Back-End.Authentication,3,#d2ac00
+Skills.Back-End.Websockets,2,#8200d2
+Skills.Back-End.Databases,
+Skills.Back-End.Databases.MySQL/Sqlite/Sequelize,3,#00618A
+Skills.Back-End.Databases.MongoDB/Mongoose,2,#175671
+Skills.Tools,
+Skills.Tools.TDD,2,#617CBE
+Skills.Tools.Agile/Scrum,2,#8161be
+Skills.Tools.Git/Github,2,#040404
+Skills.Tools.Webpack,2,#808080
+Skills.Tools.3rd Party APIs,3,#61bea4
