@@ -5,11 +5,9 @@ import ProjectPage from './components/ProjectPage';
 import SkillsResume from './components/SkillsResume';
 import AboutMe from './components/AboutMeContact';
 import NavBar from './components/Navbar';
-import { Controller, Scene } from 'react-scrollmagic';
+import BlogJS from './components/Blog';
 import { StickyContainer, Sticky } from 'react-sticky';
-import AOS from 'aos';
 
-// AOS.init({ offset: 500, duration: 600, easing: 'ease-in-sine', delay: 200 });
 ReactDOM.render(
   <div>
     <div className="home-page" id="homePage">
@@ -19,7 +17,6 @@ ReactDOM.render(
       <StickyContainer className="stickycontainer">
         <Sticky>
           {({ style }) => {
-            // console.log('helloooo', style);
             return (
               <div className="menu" style={style}>
                 <NavBar />
@@ -31,7 +28,9 @@ ReactDOM.render(
         <div id="projects">
           <ProjectPage />
         </div>
-
+        <div id="blog">
+          <BlogJS />
+        </div>
         <div className="skills-resume" id="skills">
           <SkillsResume />
         </div>

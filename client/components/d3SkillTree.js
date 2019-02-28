@@ -1,5 +1,6 @@
 import * as d3 from 'd3';
-let svg = d3.select('svg'),
+
+let svg = d3.select('#skill-chart'),
   width = +svg.attr('width'),
   height = +svg.attr('height'),
   g = svg.append('g').attr('transform', 'translate(40,0)');
@@ -9,18 +10,12 @@ let tree = d3.cluster().size([height, width - 160]);
 let stratify = d3.stratify().parentId(function(d) {
   return d.id.substring(0, d.id.lastIndexOf('.'));
 });
-console.log('this is the svg: ', svg);
-console.log('this is the tree: ', tree);
-console.log('this is stratify: ', stratify);
 
-d3.csv('flare.csv', function(error, data) {
-  if (error) console.error(error);
-  console.log('this is the data: ', data);
-
+d3.csv('skillsdata.csv', function(error, data) {
+  if (error) throw error;
   let root = stratify(data).sort(function(a, b) {
     return a.height - b.height || a.id.localeCompare(b.id);
   });
-  console.log('this is the root: ', root);
   tree(root);
   let link = g
     .selectAll('.link')

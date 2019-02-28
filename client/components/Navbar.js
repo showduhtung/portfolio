@@ -8,7 +8,6 @@ import Button from '@material-ui/core/Button';
 const WithState = toRenderProps(withState('anchorEl', 'updateAnchorEl', null));
 
 const NavBar = props => {
-  // console.log('navbar props', props);
   return (
     <WithState>
       {({ anchorEl, updateAnchorEl }) => {
@@ -41,6 +40,19 @@ const NavBar = props => {
                 onClick={handleClose}
               >
                 Projects
+              </Link>
+            </Button>
+            <Button>
+              <Link
+                activeClass="active"
+                to="blog"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClose}
+              >
+                Blogs
               </Link>
             </Button>
             <Button>

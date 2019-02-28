@@ -1,11 +1,7 @@
 import React from 'react';
-import Navbar from './Navbar';
-import Typography from '@material-ui/core/Typography';
-// import Sidebar from './Sidebar'
 
 export default class HomePage extends React.Component {
   render() {
-    console.log('hello', this);
     return (
       <div>
         <div className="front-page-text">
