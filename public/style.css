@@ -150,9 +150,9 @@ html {
 .skills-resume {
   color: white;
   height: auto;
-  width: 90%;
+  width: 100%;
   position: relative;
-  background: white;
+  background: red;
 }
 
 svg {
@@ -164,7 +164,7 @@ svg {
   fill: none;
   stroke: #555;
   stroke-opacity: 0.4;
-  stroke-width: 1px;
+  stroke-width: 4px;
 }
 text {
   font-family: 'Arial Black', Gadget, sans-serif;
@@ -197,7 +197,7 @@ text {
 }
 .node--leaf text {
   font-size: 0.9em;
-  fill: white;
+  fill: black;
 }
 .ballG text {
   fill: white;
@@ -232,3 +232,30 @@ text {
   stroke-opacity: 0.4;
   stroke-width: 1.5px;
 } */
+
+/* form */
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 2;
+  margin: 1em;
+}
+
+form input {
+  padding: 0.3em;
+  margin: 0.5em 0;
+  font-size: 1.2em;
+}
+.form form button {
+  color: white;
+  background-color: #59a9e9;
+}
+
+form button:hover {
+  background-color: #59a9c2;
+}
+
+form button:disabled {
+  background-color: #ccc;
+}

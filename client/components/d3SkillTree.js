@@ -1,9 +1,12 @@
 import * as d3 from 'd3';
 
-let svg = d3.select('#skill-chart'),
+let svg = d3
+    .select('#skill-chart')
+    .style('width', '100%')
+    .style('height', 'auto'),
   width = +svg.attr('width'),
   height = +svg.attr('height'),
-  g = svg.append('g').attr('transform', 'translate(40,0)');
+  g = svg.append('g').attr('transform', 'translate(200,0)');
 
 let tree = d3.cluster().size([height, width - 160]);
 
@@ -54,7 +57,7 @@ d3.csv('skillsdata.csv', function(error, data) {
     .attr('transform', function(d) {
       return 'translate(' + d.y + ',' + d.x + ')';
     });
-  node.append('circle').attr('r', 2.5);
+  node.append('circle').attr('r', 4);
   node
     .append('text')
     .attr('dy', 3)

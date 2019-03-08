@@ -9,7 +9,7 @@ export default class Skills extends React.Component {
     return (
       <section className="skills">
         <h3 id="skills">Skills</h3>
-        <svg width="960" height="2000" id="skill-chart" />
+        <svg width="1200" height="1200" id="skill-chart" />
       </section>
     );
   }
