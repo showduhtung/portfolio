@@ -10,6 +10,7 @@ import { StickyContainer, Sticky } from 'react-sticky';
 
 ReactDOM.render(
   <div>
+    hello
     <div className="home-page" id="homePage">
       <HomePage />
     </div>
