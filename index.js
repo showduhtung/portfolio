@@ -1,7 +1,7 @@
 const path = require('path');
 const express = require('express');
 const app = express();
-const port = 8080;
+const port = process.env.PORT || 8080;
 
 // you'll of course want static middleware so your browser can request things like your 'bundle.js'
 app.use(express.static(path.join(__dirname, './public')));
