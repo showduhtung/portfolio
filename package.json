@@ -7,7 +7,8 @@
     "build": "webpack -w",
     "start": "webpack -p & node index.js",
     "start-forever": "forever index.js",
-    "start-dev": "webpack -w & node index.js",
+    "start-dev": "webpack -w & nodemon index.js",
+    "starting": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -45,6 +46,8 @@
     "react-icons": "^3.4.0",
     "react-scroll": "^1.7.10",
     "react-sticky": "^6.0.3",
-    "roboto-npm-webfont": "^1.0.1"
+    "roboto-npm-webfont": "^1.0.1",
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
   }
 }
