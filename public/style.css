@@ -20,7 +20,7 @@ html {
 }
 .home-page .front-page-text {
   color: rgba(163, 153, 153, 0.664);
-  font-family: 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
+  font-family: 'Courier New', 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
   font-size: 1.875em;
   text-rendering: optimizeLegibility;
   float: right;
