@@ -16,7 +16,7 @@ const NavBar = props => {
         };
         return (
           <React.Fragment>
-            <Button style={{ fontSize: '25px', fontFamily: 'Courier' }}>
+            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
               <Link
                 activeClass="active"
                 to="homePage"
@@ -29,7 +29,7 @@ const NavBar = props => {
                 <FaSmileWink />
               </Link>
             </Button>
-            <Button style={{ fontSize: '25px', fontFamily: 'Courier' }}>
+            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
               <Link
                 activeClass="active"
                 to="projects"
@@ -42,7 +42,7 @@ const NavBar = props => {
                 Projects
               </Link>
             </Button>
-            <Button style={{ fontSize: '25px', fontFamily: 'Courier' }}>
+            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
               <Link
                 activeClass="active"
                 to="blog"
@@ -55,7 +55,7 @@ const NavBar = props => {
                 Blogs
               </Link>
             </Button>
-            <Button style={{ fontSize: '25px', fontFamily: 'Courier' }}>
+            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
               <Link
                 activeClass="active"
                 to="skills"
@@ -68,7 +68,7 @@ const NavBar = props => {
                 Skills
               </Link>
             </Button>
-            <Button style={{ fontSize: '25px', fontFamily: 'Courier' }}>
+            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
               <Link
                 activeClass="active"
                 to="aboutMe"
