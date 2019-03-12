@@ -25,7 +25,6 @@ ReactDOM.render(
             );
           }}
         </Sticky>
-
         <div id="projects">
           <ProjectPage />
         </div>

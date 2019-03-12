@@ -7,7 +7,8 @@
     "build": "webpack -w",
     "start": "webpack -p & node index.js",
     "start-forever": "forever index.js",
-    "start-dev": "webpack -w & node index.js",
+    "start-prod": "webpack -w & node index.js",
+    "start-dev": "webpack -w & forever index.js",
     "starting": "webpack-dev-server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },

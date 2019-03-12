@@ -36,7 +36,7 @@ html {
 .menu {
   background: #aaa;
   display: flex;
-  font-size: 5em;
+  font-size: 8em;
   justify-content: space-evenly;
   z-index: 1;
 }
