@@ -19,17 +19,37 @@ html {
 .home-page {
   height: 100vh;
 }
-.home-page .front-page-text {
-  color: rgba(163, 153, 153, 0.664);
+.front-page-name {
+  color: black;
+  font-size: 1.875em;
+  font-weight: 100;
+  text-rendering: optimizeLegibility;
+  /* float: right; */
+  background-color: rgba(255, 255, 0, 0.747);
+  display: flex;
+  padding-right: 10px;
+}
+.front-page-name-name {
+  transform: translate(5%, 0);
+}
+.front-page-name-welcome {
+  transform: translate(52%, 0);
+}
+.front-page-text {
+  /* color: rgba(163, 153, 153, 0.664); */
+  color: black;
+
   /* font-family: 'Courier New', 'Lato 300', 'Roboto', 'Arial', 'sans-serif'; */
   font-size: 1.875em;
   text-rendering: optimizeLegibility;
   /* float: right; */
   background-color: yellow;
+  display: inline-block;
+  padding-right: 10px;
 }
 .home-page .front-page-text .quote-part-2 {
   /* float: right; */
-  transform: translate(2%, -100%);
+  transform: translate(4%, -40%);
 }
 /* .home-page .front-page-text .my-name { */
 /* transform: translate(0, 100%); */
@@ -40,6 +60,21 @@ html {
   color: rgba(163, 153, 153, 0.664);
   background-color: white;
   float: right;
+  padding-right: 5px;
+  padding-left: 5px;
+
+  /* text-align: right; */
+}
+
+.front-page-moreblurb {
+  /* color: rgba(163, 153, 153, 0.664); */
+  color: black;
+  background-color: blue;
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+  transform: translate(0, 100%);
+  /* float: right; */
   /* text-align: right; */
 }
 
