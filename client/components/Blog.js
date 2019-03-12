@@ -11,6 +11,16 @@ const blogTiles = [
     p:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
   },
+  {
+    path: '/resources/img/gvisionAPI.jpg',
+    title: 'Getting started with Google Vision API on NodeJS (Text Detection)',
+    author: 'Shaun Tung',
+    href: 'https://medium.com/p/f8fadfcefd3e/edit',
+    h2: 'Getting started with Google Vision API on NodeJS (Text Detection)',
+    span: 'Getting started with Google Vision API on NodeJS (Text Detection)',
+    p:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
+  },
 ];
 
 class BlogJS extends React.Component {
@@ -30,7 +40,7 @@ class BlogJS extends React.Component {
                 <span>{tile.span}</span>
                 <p>{tile.p}</p>
                 <a href={tile.href} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github fa-3x" />
+                  <i className="fab fa-medium fa-3x" />
                 </a>
               </div>
             </div>

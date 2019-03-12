@@ -26,7 +26,7 @@ const NavBar = props => {
                 duration={500}
                 onClick={handleClose}
               >
-                <FaSmileWink />
+                Home
               </Link>
             </Button>
             <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>

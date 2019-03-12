@@ -24,14 +24,23 @@ html {
   /* font-family: 'Courier New', 'Lato 300', 'Roboto', 'Arial', 'sans-serif'; */
   font-size: 1.875em;
   text-rendering: optimizeLegibility;
-  float: right;
+  /* float: right; */
+  background-color: yellow;
 }
 .home-page .front-page-text .quote-part-2 {
-  float: right;
+  /* float: right; */
+  transform: translate(2%, -100%);
 }
-.home-page .front-page-text .my-name {
-  transform: translate(0, 100%);
+/* .home-page .front-page-text .my-name { */
+/* transform: translate(0, 100%); */
+/* float: left; */
+/* } */
+
+.front-page-blurb {
+  color: rgba(163, 153, 153, 0.664);
+  background-color: white;
   float: right;
+  /* text-align: right; */
 }
 
 .menu {
@@ -126,21 +135,26 @@ html {
   color: #ffffff;
   padding: 0 10px;
 }
-
-.blog {
+.fa-medium {
+  color: #ffffff;
+  padding: 0 10px;
+}
+#blog {
   color: white;
+  font-style: normal;
   /* background-color: red; */
   height: auto;
   width: 100%;
 }
-.blog-Title {
+#blog-Title {
   text-align: center;
-  font-family: 'Raleway', sans-serif;
+  /* font-family: 'Raleway', sans-serif; */
+  /* background-color: blue; */
 }
 
 .container .card-tiles {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   border-radius: 0.375em;
   /* margin: 0 auto; */
   transition: 0.5s;
@@ -168,7 +182,7 @@ svg {
   stroke-width: 4px;
 }
 text {
-  font-family: 'Arial Black', Gadget, sans-serif;
+  /* font-family: 'Arial Black', Gadget, sans-serif; */
   fill: black;
   font-weight: bold;
   font-size: 0.9em;
@@ -195,10 +209,14 @@ text {
 .node--internal text {
   font-size: 2em;
   text-shadow: 0 2px 0 #fff, 0 -2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
+  font-family: 'Courier New', 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
+  background-color: white;
 }
 .node--leaf text {
   font-size: 0.9em;
+  background-color: white;
   fill: black;
+  font-family: 'Courier New', 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
 }
 .ballG text {
   fill: white;
