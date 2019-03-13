@@ -12,7 +12,7 @@ const blogTiles = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
   },
   {
-    path: '/resources/img/gvisionAPI.jpg',
+    path: '/resources/img/gvisionAPI.jpg1',
     title: 'Getting started with Google Vision API on NodeJS (Text Detection)',
     author: 'Shaun Tung',
     href: 'https://medium.com/p/f8fadfcefd3e/edit',

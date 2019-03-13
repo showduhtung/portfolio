@@ -6,7 +6,10 @@ let svg = d3
     .style('height', 'auto'),
   width = +svg.attr('width'),
   height = +svg.attr('height'),
-  g = svg.append('g').attr('transform', 'translate(200,0)');
+  g = svg
+    .append('g')
+    .attr('transform', 'translate(200,0)')
+    .attr('class', 'topNode');
 
 let tree = d3.cluster().size([height, width - 160]);
 
@@ -51,8 +54,12 @@ d3.csv('skillsdata.csv', function(error, data) {
     .data(root.descendants())
     .enter()
     .append('g')
+    // .attr('class', 'the-text')
     .attr('class', function(d) {
-      return 'node' + (d.children ? ' node--internal' : ' node--leaf');
+      return (
+        'node' +
+        (d.children ? ' node--internalm the-text' : ' node--leaf the-text')
+      );
     })
     .attr('transform', function(d) {
       return 'translate(' + d.y + ',' + d.x + ')';
@@ -70,4 +77,23 @@ d3.csv('skillsdata.csv', function(error, data) {
     .text(function(d) {
       return d.id.substring(d.id.lastIndexOf('.') + 1);
     });
+
+  let topNode = document.getElementsByClassName('topNode');
+  let textElm = topNode[0].getElementsByClassName('the-text');
+
+  console.log(textElm, topNode[0].childNodes[32].childNodes);
+
+  for (let i = 0; i < textElm.length; i++) {
+    let rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    let SVGRect = textElm[i].getBBox();
+    rect.setAttribute('x', SVGRect.x);
+    rect.setAttribute('y', SVGRect.y);
+    rect.setAttribute('width', SVGRect.width);
+    rect.setAttribute('height', SVGRect.height);
+    rect.setAttribute('fill', 'yellow');
+    topNode[0].childNodes[32 + i].insertBefore(
+      rect,
+      topNode[0].childNodes[32 + i].childNodes[0]
+    );
+  }
 });
