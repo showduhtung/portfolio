@@ -2,17 +2,16 @@ id,value,color
 Skills,
 Skills.Front-End,
 Skills.Front-End.HTML5,4,#666547
-Skills.Front-End.CSS3/Sass/Bootstrap,3,#fb2e01
+Skills.Front-End.CSS3/Sass,3,#fb2e01
 Skills.Front-End.JavaScript ES6,4,#6fcb9f
 Skills.Front-End.AJAX,3,#77bfd1
 Skills.Front-End.JSON,3,#b9d982
 Skills.Front-End.JavaScript Frameworks,
 Skills.Front-End.JavaScript Frameworks.React,3,#00A0D2
 Skills.Front-End.JavaScript Frameworks.React Native,3,#00A0D2
-Skills.Front-End.JavaScript Frameworks.Angular,3,#00618A
-Skills.Front-End.JavaScript Frameworks.Backbone,3,#b10aff
+Skills.Front-End.JavaScript Frameworks.Express,3,#00A0D2
 Skills.JavaScript Libraries,
-Skills.JavaScript Libraries.jQuery,3,#2a266e
+Skills.JavaScript Libraries.OAuth,3,#2a266e
 Skills.JavaScript Libraries.D3,2,#4e266e
 Skills.JavaScript Libraries.Socket IO,3,#70994c
 Skills.JavaScript Libraries.Redux,2,#4c9951
@@ -25,7 +24,8 @@ Skills.Back-End.Authentication,3,#d2ac00
 Skills.Back-End.Websockets,2,#8200d2
 Skills.Back-End.Databases,
 Skills.Back-End.Databases.PostgreSQL/Sqlite/Sequelize,3,#00618A
-Skills.Back-End.Databases.MongoDB/Mongoose,2,#175671
+Skills.Back-End.Databases.Firebase,2,#175671
+Skills.Back-End.Databases.AWS,2,#175671
 Skills.Tools,
 Skills.Tools.TDD,2,#617CBE
 Skills.Tools.Agile/Scrum,2,#8161be
