@@ -78,22 +78,22 @@ d3.csv('skillsdata.csv', function(error, data) {
       return d.id.substring(d.id.lastIndexOf('.') + 1);
     });
 
-  // let topNode = document.getElementsByClassName('topNode');
-  // let textElm = topNode[0].getElementsByClassName('the-text');
+  let topNode = document.getElementsByClassName('topNode');
+  let textElm = topNode[0].getElementsByClassName('the-text');
 
-  // console.log(textElm, topNode[0].childNodes[32].childNodes);
+  console.log(textElm, topNode[0].childNodes[32].childNodes);
 
-  // for (let i = 0; i < textElm.length; i++) {
-  //   let rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-  //   let SVGRect = textElm[i].getBBox();
-  //   rect.setAttribute('x', SVGRect.x);
-  //   rect.setAttribute('y', SVGRect.y);
-  //   rect.setAttribute('width', SVGRect.width);
-  //   rect.setAttribute('height', SVGRect.height);
-  //   rect.setAttribute('fill', 'yellow');
-  //   topNode[0].childNodes[32 + i].insertBefore(
-  //     rect,
-  //     topNode[0].childNodes[32 + i].childNodes[0]
-  //   );
-  // }
+  for (let i = 0; i < textElm.length; i++) {
+    let rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    let SVGRect = textElm[i].getBBox();
+    rect.setAttribute('x', SVGRect.x);
+    rect.setAttribute('y', SVGRect.y);
+    rect.setAttribute('width', SVGRect.width);
+    rect.setAttribute('height', SVGRect.height);
+    rect.setAttribute('fill', 'yellow');
+    topNode[0].childNodes[32 + i].insertBefore(
+      rect,
+      topNode[0].childNodes[32 + i].childNodes[0]
+    );
+  }
 });
