@@ -38,7 +38,7 @@ export default class HomePage extends React.Component {
             To float like a butterfly, and to be like a
           </h2>
           <h2 style={{ backgroundColor: 'orange' }}>
-            bee was to be adapable and effective.
+            bee was to be adaptable and effective.
           </h2>
         </div>
         <div className="front-page-moreblurb">
