@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import HomePage from './components/HomePage';
 import ProjectPage from './components/ProjectPage';
 import SkillsResume from './components/SkillsResume';
-import AboutMe from './components/AboutMeContact';
+import ContactMe from './components/ContactMe';
 import NavBar from './components/Navbar';
 import BlogJS from './components/Blog';
+import AboutMe from './components/AboutMe';
 import { StickyContainer, Sticky } from 'react-sticky';
 
 ReactDOM.render(
@@ -24,6 +25,9 @@ ReactDOM.render(
             );
           }}
         </Sticky>
+        <div id="aboutMe">
+          <AboutMe />
+        </div>
         <div id="projects">
           <ProjectPage />
         </div>
@@ -33,8 +37,8 @@ ReactDOM.render(
         <div className="skills-resume" id="skills">
           <SkillsResume />
         </div>
-        <div className="about-me" id="aboutMe">
-          <AboutMe />
+        <div className="contact-me" id="contactMe">
+          <ContactMe />
         </div>
       </StickyContainer>
     </div>

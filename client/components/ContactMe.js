@@ -5,7 +5,7 @@ import React from 'react';
 
 //information about myself, icons and such
 
-class AboutMeContact extends React.Component {
+class ContactMe extends React.Component {
   render() {
     return (
       <div id="AboutMe">
@@ -46,4 +46,4 @@ class AboutMeContact extends React.Component {
   }
 }
 
-export default AboutMeContact;
+export default ContactMe;

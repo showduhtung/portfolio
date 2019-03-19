@@ -19,6 +19,7 @@ html {
 .home-page {
   height: 100vh;
 }
+
 .front-page-headline {
   color: black;
   font-size: 1.2vw;
@@ -75,6 +76,11 @@ html {
   z-index: 1;
 }
 
+#aboutMe {
+  color: white;
+  height: 100vh;
+  /* width: 100%; */
+}
 .project-page {
   color: white;
   /* background-color: red; */
@@ -254,10 +260,12 @@ text {
   filter: drop-shadow(-1.5px -1.5px 1.5px #000);
 }
 
-.about-me {
+.contact-me {
   color: white;
   height: 100vh;
-  width: 100%;
+  width: 50%;
+  /* display: flex; */
+  align-items: center;
 }
 
 /* .node circle {

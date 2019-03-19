@@ -32,6 +32,19 @@ const NavBar = props => {
             <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
               <Link
                 activeClass="active"
+                to="aboutMe"
+                spy={true}
+                smooth={true}
+                offset={-70}
+                duration={500}
+                onClick={handleClose}
+              >
+                About Me
+              </Link>
+            </Button>
+            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
+              <Link
+                activeClass="active"
                 to="projects"
                 spy={true}
                 smooth={true}
@@ -71,14 +84,14 @@ const NavBar = props => {
             <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
               <Link
                 activeClass="active"
-                to="aboutMe"
+                to="contactMe"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 onClick={handleClose}
               >
-                About Me
+                Contact Me
               </Link>
             </Button>
           </React.Fragment>
