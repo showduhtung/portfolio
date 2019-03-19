@@ -28,7 +28,6 @@ class BlogJS extends React.Component {
     return (
       <div className="blog-page">
         <h1 className="blog-Title"> Blogs</h1>
-
         <div className="container">
           {blogTiles.map(tile => (
             <div className="card-tiles" key={tile.path}>

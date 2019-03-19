@@ -4,7 +4,7 @@
 
 html {
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(IMG_3399.jpg);
+    url(IMG_3104.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -13,8 +13,10 @@ html {
   margin: 0;
   /* font-size: 16px; */
   display: flex;
-  font-family: 'Courier New', 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
+  font-family: 'Inconsolata', monospace;
 }
+
+/* linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
 
 .home-page {
   height: 100vh;
