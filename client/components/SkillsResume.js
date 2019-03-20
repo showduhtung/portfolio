@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class Skills extends React.Component {
   componentDidMount() {
-    require('./d3SkillTree.js');
+    require('./d3SkillTree2.js');
   }
 
   render() {

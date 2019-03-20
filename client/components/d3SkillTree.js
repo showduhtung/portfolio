@@ -91,6 +91,7 @@ d3.csv('skillsdata.csv', function(error, data) {
     rect.setAttribute('width', SVGRect.width);
     rect.setAttribute('height', SVGRect.height);
     rect.setAttribute('fill', 'yellow');
+
     topNode[0].childNodes[32 + i].insertBefore(
       rect,
       topNode[0].childNodes[32 + i].childNodes[0]

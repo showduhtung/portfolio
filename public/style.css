@@ -240,7 +240,7 @@ body {
 
 .skills-resume {
   color: white;
-  background-color: #00030d;
+  background-color: #e8c14a;
   height: auto;
   width: 100%;
   position: relative;
@@ -284,15 +284,23 @@ text {
 }
 .node--internal text {
   /* font-size: 2em; */
-  text-shadow: 0 2px 0 #fff, 0 -2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff;
-  font-family: 'Courier New', 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
+  /* text-shadow: 0 2px 0 #fff, 0 -2px 0 #fff, 2px 0 0 #fff, -2px 0 0 #fff; */
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: bold;
+  font-size: 2vw;
+
   background-color: white;
+}
+
+.tick {
+  font-size: 1vw;
 }
 .node--leaf text {
   /* font-size: 1.5em; */
   background-color: white;
   fill: black;
-  font-family: 'Courier New', 'Lato 300', 'Roboto', 'Arial', 'sans-serif';
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: bold;
 }
 
 .the-text {
