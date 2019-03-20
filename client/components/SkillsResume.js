@@ -10,7 +10,7 @@ export default class Skills extends React.Component {
       <div className="skills">
         <h3 id="skills">Skills</h3>
         <svg
-          width="1200"
+          width="100vw"
           height="1200"
           id="skill-chart"
           // style="width: 100%; height: auto;"
