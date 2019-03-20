@@ -19,7 +19,7 @@ ReactDOM.render(
         <Sticky>
           {({ style }) => {
             return (
-              <div className="menu" style={style}>
+              <div className="navbar" style={style}>
                 <NavBar />
               </div>
             );

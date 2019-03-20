@@ -3,30 +3,76 @@
 }
 
 html {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(IMG_3104.jpg);
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+    url(hello.jpg); */
+  /* background-color: #e8c14a; */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  height: 100vh;
-  padding: 0;
-  margin: 0;
-  /* font-size: 16px; */
   display: flex;
-  font-family: 'Inconsolata', monospace;
+  /* font-family: 'Inconsolata', monospace; */
+  font-family: 'Anonymous Pro', monospace;
 }
-
+/* grayscale(100%) */
 /* linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
-
-.home-page {
-  height: 100vh;
+body {
+  margin: 0;
 }
 
+#homePage {
+  height: 100vh;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e8c14a;
+  background-size: cover;
+  margin: 0;
+}
+
+/* .homepage-topdiv {
+  margin-top: -15vw;
+} */
+.homePage-title1 {
+  font-size: 7vw;
+  font-weight: 700;
+}
+.homePage-title2 {
+  font-size: 7vw;
+  font-weight: 700;
+  margin-top: -1.5vw;
+}
+.homePage-title3 {
+  font-size: 1.55vw;
+  font-weight: 700;
+  margin-top: 1.3vw;
+}
+
+.help {
+  font-size: 2vw;
+  transform: translate(-30%, -175%);
+}
+
+.ouch {
+  font-size: 2vw;
+  transform: translate(75%, 600%) rotate(90deg);
+}
+
+.thisStings {
+  font-size: 2vw;
+  transform: translate(-40%, 400%);
+}
+
+.honeyImHome {
+  font-size: 2vw;
+  transform: translate(100%, 400%);
+}
+
+/*
 .front-page-headline {
   color: black;
   font-size: 1.2vw;
   text-rendering: optimizeLegibility;
-  /* float: right; */
   background-color: rgba(255, 255, 0, 0.747);
   display: flex;
   padding-right: 10px;
@@ -43,10 +89,7 @@ html {
   display: inline-block;
   padding-right: 10px;
   margin: 0;
-}
-.quote-part-2 {
-  /* transform: translate(4%, -40%); */
-}
+} */
 
 .front-page-blurb {
   color: black;
@@ -70,10 +113,10 @@ html {
   margin: 30px 30px;
 }
 
-.menu {
-  background: #aaa;
+.navbar {
+  background: #722e15;
   display: flex;
-  font-size: 8em;
+  font-size: 10vw;
   justify-content: space-evenly;
   z-index: 1;
 }
@@ -82,6 +125,7 @@ html {
   color: white;
   height: 100vh;
   /* width: 100%; */
+  background-color: #c0a257;
 }
 .project-page {
   color: white;
@@ -196,6 +240,7 @@ html {
 
 .skills-resume {
   color: white;
+  background-color: #00030d;
   height: auto;
   width: 100%;
   position: relative;
@@ -285,7 +330,7 @@ text {
 */
 .link {
   fill: none;
-  stroke: rgb(129, 14, 14);
+  stroke: rgb(246, 77, 21);
   stroke-opacity: 0.7;
   stroke-width: 3px;
 }
