@@ -3,18 +3,13 @@
 }
 
 html {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-    url(hello.jpg); */
-  /* background-color: #e8c14a; */
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
   display: flex;
-  /* font-family: 'Inconsolata', monospace; */
   font-family: 'Anonymous Pro', monospace;
 }
-/* grayscale(100%) */
-/* linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), */
+
 body {
   margin: 0;
 }
@@ -30,87 +25,39 @@ body {
   margin: 0;
 }
 
-/* .homepage-topdiv {
-  margin-top: -15vw;
-} */
-.homePage-title1 {
+#homePage .title1 {
   font-size: 7vw;
   font-weight: 700;
 }
-.homePage-title2 {
+#homePage .title2 {
   font-size: 7vw;
   font-weight: 700;
   margin-top: -1.5vw;
 }
-.homePage-title3 {
+#homePage .title3 {
   font-size: 1.55vw;
   font-weight: 700;
   margin-top: 1.3vw;
 }
 
-.help {
+#homePage .help {
   font-size: 2vw;
   transform: translate(-30%, -175%);
 }
 
-.ouch {
+#homePage .ouch {
   font-size: 2vw;
   transform: translate(75%, 600%) rotate(90deg);
 }
 
-.thisStings {
+#homePage .thisStings {
   font-size: 2vw;
   transform: translate(-40%, 400%);
 }
 
-.honeyImHome {
+#homePage .honeyImHome {
   font-size: 2vw;
   transform: translate(100%, 400%);
-}
-
-/*
-.front-page-headline {
-  color: black;
-  font-size: 1.2vw;
-  text-rendering: optimizeLegibility;
-  background-color: rgba(255, 255, 0, 0.747);
-  display: flex;
-  padding-right: 10px;
-  justify-content: space-between;
-  flex-direction: row;
-}
-
-.front-page-text {
-  color: black;
-  transform: translate(0%, 50%);
-  font-size: 1.2vw;
-  text-rendering: optimizeLegibility;
-  background-color: rgba(58, 54, 54, 0.836);
-  display: inline-block;
-  padding-right: 10px;
-  margin: 0;
-} */
-
-.front-page-blurb {
-  color: black;
-  background-color: rgba(58, 54, 54, 0.836);
-  float: right;
-  padding-right: 5px;
-  padding-left: 5px;
-  transform: translate(0, 50%);
-}
-
-.front-page-moreblurb {
-  /* color: rgba(163, 153, 153, 0.664); */
-  color: black;
-  background-color: rgba(58, 54, 54, 0.836);
-  display: inline-block;
-  padding-right: 5px;
-  padding-left: 5px;
-  transform: translate(50%, 250%);
-  /* float: right; */
-  /* text-align: right; */
-  margin: 30px 30px;
 }
 
 .navbar {
@@ -126,6 +73,32 @@ body {
   height: 100vh;
   /* width: 100%; */
   background-color: #c0a257;
+}
+
+#aboutMe .topAboutMeDiv {
+  display: flex;
+  /* flex-direction: row; */
+  height: 100vh;
+}
+#aboutMe .personalPicture {
+  width: 100vh;
+}
+#aboutMe .personalPicture .aboutMePicture {
+  height: 80%;
+  width: auto;
+  padding-top: 10vh;
+  padding-left: 7vh;
+}
+#aboutMe .aboutMeBlurb {
+  float: right;
+  font-size: 3.6vh;
+  padding-left: 10vh;
+  padding-top: 12vh;
+  padding-right: 35vh;
+  color: black;
+}
+#aboutMe .MAliQuote {
+  font-weight: bold;
 }
 .project-page {
   color: white;
@@ -208,6 +181,14 @@ body {
   font-size: 16px;
 }
 .fa-github {
+  color: #ffffff;
+  padding: 0 10px;
+}
+.fa-linkedin {
+  color: #ffffff;
+  padding: 0 10px;
+}
+.fa-facebook {
   color: #ffffff;
   padding: 0 10px;
 }
