@@ -14,6 +14,8 @@ const tileData = [
     p:
       'Grace Shopper is a simply designed e-commerce website with the powerful ability to store information on the client-side.',
     projectId: 1,
+    stack:
+      'JavaScript, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
   },
   {
     path: '/resources/img/IMG_3399.jpg',
@@ -23,8 +25,10 @@ const tileData = [
     h2: 'Wolfram Beta',
     span: 'An interactive problem solver',
     p:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
+      'Wolfram Beta is an incredibly powerfully built website capable of solving any mathematical equation. ',
     projectId: 2,
+    stack:
+      'JavaScript, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
   },
 
   {
@@ -35,8 +39,10 @@ const tileData = [
     h2: 'City Snapper',
     span: 'An interactive tourist adventure',
     p:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
+      'An interactive scavenger hunt app for tourists to learn, discover and explore the city as they go along. Built as a serverless mobile app with a cloud-based backend component, this project exemplifies an ideal progressively modern app.',
     projectId: 3,
+    stack:
+      'JavaScript, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
   },
 ];
 
@@ -56,13 +62,16 @@ class ProjectPage extends React.Component {
             <div className="single-project" key={tile.projectId}>
               <div className="leftColumn">
                 <h2 className="titleOfProject">
-                  <span>{tile.title}</span>
+                  <span>
+                    {tile.projectId}. {tile.title}
+                  </span>
                 </h2>
                 <div className="bodyofProject">
-                  <p>{tile.p}</p>
+                  <p className="projectDescripto">
+                    <b>Descrption:</b> {tile.p}
+                  </p>
                   <p className="tech">
-                    <b>Tech used:</b> Fabric.js, Angular, JavaScript, HTML5,
-                    CSS3, Node, Express, jQuery, AJAX, MySQL, Sequelize
+                    <b>Tech used:</b> {tile.stack}
                   </p>
                 </div>
               </div>

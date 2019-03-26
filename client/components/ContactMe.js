@@ -8,8 +8,8 @@ import React from 'react';
 class ContactMe extends React.Component {
   render() {
     return (
-      <div id="AboutMe">
-        <div id="form">Form.js</div>
+      <div className="contactContainer">
+        <h1 id="form">Keep in Contact!</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="yourName">Your Name (required)</label>
           <input
