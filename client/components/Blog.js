@@ -26,9 +26,9 @@ const blogTiles = [
 class BlogJS extends React.Component {
   render() {
     return (
-      <div className="blog-page">
+      <div className="blog-topdiv">
         <h1 className="blog-Title"> Blogs</h1>
-        <div className="container">
+        <div className="blogcontainer">
           {blogTiles.map(tile => (
             <div className="card-tiles" key={tile.path}>
               <a href={tile.href} target="_blank" rel="noopener noreferrer">

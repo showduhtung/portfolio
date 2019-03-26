@@ -16,7 +16,13 @@ const NavBar = props => {
         };
         return (
           <React.Fragment>
-            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
+            <Button
+              style={{
+                fontSize: '0.20em',
+                fontFamily: 'Anonymous Pro',
+                color: '#e8c14a',
+              }}
+            >
               <Link
                 activeClass="active"
                 to="homePage"
@@ -29,7 +35,13 @@ const NavBar = props => {
                 Home
               </Link>
             </Button>
-            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
+            <Button
+              style={{
+                fontSize: '0.20em',
+                fontFamily: 'Anonymous Pro',
+                color: '#e8c14a',
+              }}
+            >
               <Link
                 activeClass="active"
                 to="aboutMe"
@@ -42,7 +54,13 @@ const NavBar = props => {
                 About Me
               </Link>
             </Button>
-            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
+            <Button
+              style={{
+                fontSize: '0.20em',
+                fontFamily: 'Anonymous Pro',
+                color: '#e8c14a',
+              }}
+            >
               <Link
                 activeClass="active"
                 to="projects"
@@ -55,7 +73,13 @@ const NavBar = props => {
                 Projects
               </Link>
             </Button>
-            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
+            <Button
+              style={{
+                fontSize: '0.20em',
+                fontFamily: 'Anonymous Pro',
+                color: '#e8c14a',
+              }}
+            >
               <Link
                 activeClass="active"
                 to="blog"
@@ -68,7 +92,13 @@ const NavBar = props => {
                 Blogs
               </Link>
             </Button>
-            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
+            <Button
+              style={{
+                fontSize: '0.20em',
+                fontFamily: 'Anonymous Pro',
+                color: '#e8c14a',
+              }}
+            >
               <Link
                 activeClass="active"
                 to="skills"
@@ -81,7 +111,13 @@ const NavBar = props => {
                 Skills
               </Link>
             </Button>
-            <Button style={{ fontSize: '0.20em', fontFamily: 'Courier' }}>
+            <Button
+              style={{
+                fontSize: '0.20em',
+                fontFamily: 'Anonymous Pro',
+                color: '#e8c14a',
+              }}
+            >
               <Link
                 activeClass="active"
                 to="contactMe"
