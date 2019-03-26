@@ -51,11 +51,11 @@ class ProjectPage extends React.Component {
     return (
       <div className="project-page">
         <h1 className="project-Title ">
-          <span>Projects</span>
+          <span> Take a look at some of my work（^_^）</span>
         </h1>
-        <h2 className="project-h2">
+        {/* <h2 className="project-h2">
           Take a look at some of the things I've done!
-        </h2>
+        </h2> */}
 
         <div className="project-container">
           {tileData.map(tile => (

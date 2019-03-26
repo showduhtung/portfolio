@@ -340,11 +340,12 @@ body {
 /*  */
 
 #blog {
-  color: white;
+  color: black;
   font-style: normal;
   /* background-color: #5b4517; */
-  background-color: #e8c14a;
+  background-color: #c0a257;
   height: 100vh;
+  width: 100%;
   padding: 0;
   margin: 0;
 }
@@ -356,6 +357,21 @@ body {
   /* background-color: blue; */
 }
 
+.blog-Title span {
+  background-color: white;
+}
+
+#blog .blogcontainer {
+  position: relative;
+  width: 80%;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-rows: auto;
+  grid-gap: 2.5em;
+  /* margin: 3.375em auto 3.375em; */
+}
+
 .blogcontainer .card-tiles {
   position: relative;
   overflow: hidden;
@@ -364,6 +380,53 @@ body {
   transition: 0.5s;
   /* background: blue; */
   -webkit-text-fill-color: yellowgreen;
+}
+.blogcontainer .card-tiles .img-box {
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.blogcontainer .card-tiles:hover .img-box {
+  opacity: 0.5;
+}
+
+.blogcontainer .card-tiles .img-box img {
+  width: 100%;
+}
+
+.blogcontainer .card-tiles .content {
+  position: absolute;
+  width: 100%;
+  height: 60%;
+  text-align: center;
+  bottom: -100%;
+  padding: 20px;
+  box-sizing: border-box;
+  transition: 0.3s;
+  background: linear-gradient(0deg, #4b4849, transparent);
+}
+
+.blogcontainer .card-tiles:hover .content {
+  bottom: 0;
+}
+
+.blogcontainer .card-tiles .content h2 {
+  margin: 0 0 10px;
+  padding: 0;
+  font-size: 20px;
+}
+
+.blogcontainer .card-tiles .content span {
+  font-size: 16px;
+}
+
+.blogcontainer .card-tiles .content p {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
 }
 
 /*  */
@@ -377,7 +440,7 @@ body {
 .skills-resume {
   color: white;
   /* background-color: #e8c14a; */
-  background-color: #c0a257;
+  background-color: #e8c14a;
   height: auto;
   width: 100%;
   position: relative;
@@ -451,7 +514,7 @@ text {
 
 .link {
   fill: none;
-  stroke: #e8c14a;
+  stroke: white;
   stroke-opacity: 0.7;
   stroke-width: 3px;
 }

@@ -12,7 +12,7 @@ const blogTiles = [
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris. Suspendisse sodales dignissim nulla, et auctor sapien. Nunc sed sem sit amet sapien pellentesque hendrerit.',
   },
   {
-    path: '/resources/img/gvisionAPI.jpg1',
+    path: '/resources/img/gvisionAPI.jpg',
     title: 'Getting started with Google Vision API on NodeJS (Text Detection)',
     author: 'Shaun Tung',
     href: 'https://medium.com/p/f8fadfcefd3e/edit',
@@ -27,10 +27,12 @@ class BlogJS extends React.Component {
   render() {
     return (
       <div className="blog-topdiv">
-        <h1 className="blog-Title"> Blogs</h1>
+        <h1 className="blog-Title">
+          <span>My Shower Thoughts on the Internet</span>
+        </h1>
         <div className="blogcontainer">
           {blogTiles.map(tile => (
-            <div className="card-tiles" key={tile.path}>
+            <div className="card-tiles" key={tile.span}>
               <a href={tile.href} target="_blank" rel="noopener noreferrer">
                 <img src={tile.path} className="img-box" />
               </a>

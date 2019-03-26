@@ -29,6 +29,7 @@
     "@babel/polyfill": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
     "babel-loader": "^8.0.4",
+    "forever": "^0.15.3",
     "react-router-dom": "^4.3.1",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
@@ -44,7 +45,6 @@
     "@material-ui/icons": "^3.0.2",
     "d3": "^4.12.1",
     "express": "^4.16.4",
-    "forever": "^0.15.3",
     "material-ui-image": "^3.1.0",
     "path": "^0.12.7",
     "react": "^16.6.3",
