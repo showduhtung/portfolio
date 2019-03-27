@@ -28,7 +28,7 @@ const tileData = [
       'Wolfram Beta is an incredibly powerfully built website capable of solving any mathematical equation. ',
     projectId: 2,
     stack:
-      'JavaScript, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
+      'JavaScript, React, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
   },
 
   {
@@ -42,7 +42,7 @@ const tileData = [
       'An interactive scavenger hunt app for tourists to learn, discover and explore the city as they go along. Built as a serverless mobile app with a cloud-based backend component, this project exemplifies an ideal progressively modern app.',
     projectId: 3,
     stack:
-      'JavaScript, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
+      'JavaScript, React, React Native, HTML5, CSS3, Node, Firebase, Expo, Sequelize, OAuth, Material-UI',
   },
 ];
 
@@ -53,10 +53,6 @@ class ProjectPage extends React.Component {
         <h1 className="project-Title ">
           <span> Take a look at some of my work（^_^）</span>
         </h1>
-        {/* <h2 className="project-h2">
-          Take a look at some of the things I've done!
-        </h2> */}
-
         <div className="project-container">
           {tileData.map(tile => (
             <div className="single-project" key={tile.projectId}>
@@ -83,25 +79,6 @@ class ProjectPage extends React.Component {
             </div>
           ))}
         </div>
-
-        {/*
-        <div className="container">
-          {tileData.map(tile => (
-            <div className="grid-tiles" key={tile.path}>
-              <a href={tile.href} target="_blank" rel="noopener noreferrer">
-                <img src={tile.path} className="img-box" />
-              </a>
-              <div className="content">
-                <h2>{tile.h2}</h2>
-                <span>{tile.span}</span>
-                <p>{tile.p}</p>
-                <a href={tile.href} target="_blank" rel="noopener noreferrer">
-                  <i className="fab fa-github fa-3x" />
-                </a>
-              </div>
-            </div>
-          ))}
-        </div> */}
       </div>
     );
   }

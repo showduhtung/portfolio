@@ -190,13 +190,15 @@ body {
 .single-project .leftColumn {
   flex-direction: column;
   text-align: center;
-  width: 50%;
+  width: 45%;
   transform: translate(0, -22%);
   align-items: stretch;
-  border-width: 2px;
+  border-width: 4px;
   border-style: solid;
   border-color: black;
   margin: 1em;
+  margin-right: 2em;
+  margin-left: 2em;
   margin-top: 4em;
 }
 
@@ -226,7 +228,7 @@ body {
 .tech {
   font-size: 1.75vh;
   width: 50%;
-  transform: translate(50%, 50%);
+  transform: translate(50%, 30%);
 }
 
 .single-project .rightColumn {
@@ -283,15 +285,18 @@ body {
   justify-content: space-evenly;
   flex: 0 1;
   flex-flow: row wrap;
+  margin-top: 5em;
 }
 
 .blogcontainer .card-tiles {
   position: relative;
-  overflow: hidden;
+  /* overflow: hidden; */
+  height: 40vh;
+  width: 30vw;
   border-radius: 0.375em;
   transition: 0.5s;
   margin: 1em;
-  -webkit-text-fill-color: yellowgreen;
+  -webkit-text-fill-color: black;
 }
 .blogcontainer .card-tiles .img-box {
   top: 0;
@@ -327,7 +332,8 @@ body {
 
 .blogcontainer .card-tiles .content h2 {
   margin: 0 0 10px;
-  padding: 0;
+  /* padding: 0; */
+  padding-bottom: 3emj;
   font-size: 20px;
 }
 
@@ -348,10 +354,7 @@ body {
 #skills {
   padding: 0;
   margin: 0;
-}
-.skills-resume {
   color: white;
-
   background-color: #e8c14a;
   height: auto;
   width: 100%;
@@ -434,27 +437,21 @@ text {
   height: auto;
 }
 
+.skills h3 span {
+  margin-left: 20%;
+}
 /* form */
 /*  */
 /* CONTACT ME */
 /*  */
 
 #contactMe {
-  /* background-color: #59a9c2; */
-  /* background-color: #722e15; */
-  /* width: 100vw; */
-
   height: 100vh;
 }
 .contactContainer {
   width: 60%;
+  margin-left: 20%;
 }
-/* .contact-me {
-  color: white;
-  height: 100vh;
-  width: 50%;
-  align-items: center;
-} */
 
 form {
   display: flex;

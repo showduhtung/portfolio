@@ -2,19 +2,16 @@ import React from 'react';
 
 export default class Skills extends React.Component {
   componentDidMount() {
-    require('./d3SkillTree2.js');
+    require('./d3SkillTree.js');
   }
 
   render() {
     return (
       <div className="skills">
-        <h3 id="skills">Skills</h3>
-        <svg
-          width="100vw"
-          height="1200"
-          id="skill-chart"
-          // style="width: 100%; height: auto;"
-        />
+        <h3 id="skills">
+          <span>These Skillz</span>
+        </h3>
+        <svg width="100vw" height="1300" id="skill-chart" />
       </div>
     );
   }

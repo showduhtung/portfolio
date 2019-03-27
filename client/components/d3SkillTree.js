@@ -1,29 +1,61 @@
 import * as d3 from 'd3';
-
-let svg = d3
-    .select('#skill-chart')
-    .style('width', '100%')
-    .style('height', 'auto'),
+var svg = d3.select('svg').call(responsivefy),
   width = +svg.attr('width'),
   height = +svg.attr('height'),
   g = svg
     .append('g')
-    .attr('transform', 'translate(200,0)')
+    .attr('transform', 'translate(60,0)') // move right 200px.
     .attr('class', 'topNode');
 
-let tree = d3.cluster().size([height, width - 160]);
+// x-scale and x-axis
+var experienceName = [
+  '',
+  'Basic 1.0',
+  'Alright 2.0',
+  'Handy 3.0',
+  'Expert 4.0',
+  'Guru 5.0',
+];
+var formatSkillPoints = function(d) {
+  return experienceName[d % 6];
+};
+var xScale = d3
+  .scaleLinear()
+  .domain([0, 5])
+  .range([0, 400]);
 
-let stratify = d3.stratify().parentId(function(d) {
-  return d.id.substring(0, d.id.lastIndexOf('.'));
-});
+var xAxis = d3
+  .axisTop()
+  .scale(xScale)
+  .ticks(5)
+  .tickFormat(formatSkillPoints);
 
-d3.csv('skillsdata.csv', function(error, data) {
-  if (error) throw error;
-  let root = stratify(data).sort(function(a, b) {
-    return a.height - b.height || a.id.localeCompare(b.id);
+// Setting up a way to handle the data
+var tree = d3
+  .cluster() // This D3 API method setup the Dendrogram datum position.
+  .size([height, width - 460]) // Total width - bar chart width = Dendrogram chart width
+  .separation(function separate(a, b) {
+    return a.parent == b.parent || // 2 levels tree grouping for category
+      a.parent.parent == b.parent ||
+      a.parent == b.parent.parent
+      ? 0.4
+      : 0.8;
   });
+
+var stratify = d3
+  .stratify() // This D3 API method gives cvs file flat data array dimensions.
+  .parentId(function(d) {
+    return d.id.substring(0, d.id.lastIndexOf('.'));
+  });
+
+d3.csv('skillsdata.csv', row, function(error, data) {
+  if (error) throw error;
+
+  var root = stratify(data);
   tree(root);
-  let link = g
+
+  // Draw every datum a line connecting to its parent.
+  var link = g
     .selectAll('.link')
     .data(root.descendants().slice(1))
     .enter()
@@ -49,52 +81,184 @@ d3.csv('skillsdata.csv', function(error, data) {
         d.parent.x
       );
     });
-  let node = g
+
+  // Setup position for every datum; Applying different css classes to parents and leafs.
+  var node = g
     .selectAll('.node')
     .data(root.descendants())
     .enter()
     .append('g')
-    // .attr('class', 'the-text')
     .attr('class', function(d) {
-      return (
-        'node' +
-        (d.children ? ' node--internalm the-text' : ' node--leaf the-text')
-      );
+      return 'node' + (d.children ? ' node--internal' : ' node--leaf');
     })
     .attr('transform', function(d) {
       return 'translate(' + d.y + ',' + d.x + ')';
     });
+
+  // Draw every datum a small circle.
   node.append('circle').attr('r', 4);
-  node
-    .append('text')
-    .attr('dy', 3)
-    .attr('x', function(d) {
-      return d.children ? -8 : 8;
+
+  // Setup G for every leaf datum.
+  var leafNodeG = g
+    .selectAll('.node--leaf')
+    .append('g')
+    .attr('class', 'node--leaf-g')
+    .attr('transform', 'translate(' + 8 + ',' + -13 + ')');
+
+  leafNodeG
+    .append('rect')
+    .attr('class', 'shadow')
+    .style('fill', function(d) {
+      return d.data.color;
     })
-    .style('text-anchor', function(d) {
-      return d.children ? 'end' : 'start';
-    })
-    .text(function(d) {
-      return d.id.substring(d.id.lastIndexOf('.') + 1);
+    .attr('width', 2)
+    .attr('height', 30)
+    .attr('rx', 2)
+    .attr('ry', 2)
+    .transition()
+    .duration(800)
+    .attr('width', function(d) {
+      return xScale(d.data.value);
     });
 
-  let topNode = document.getElementsByClassName('topNode');
-  let textElm = topNode[0].getElementsByClassName('the-text');
+  leafNodeG
+    .append('text')
+    .attr('dy', 19.5)
+    .attr('x', 8)
+    .style('text-anchor', 'start')
+    .text(function(d) {
+      return d.data.id.substring(d.data.id.lastIndexOf('.') + 1);
+    });
 
-  console.log(textElm, topNode[0].childNodes[32].childNodes);
+  // Write down text for every parent datum
+  var internalNode = g.selectAll('.node--internal');
+  internalNode
+    .append('text')
+    .attr('y', -10)
+    .style('text-anchor', 'middle')
+    .text(function(d) {
+      return d.data.id.substring(d.data.id.lastIndexOf('.') + 1);
+    });
 
-  for (let i = 0; i < textElm.length; i++) {
-    let rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
-    let SVGRect = textElm[i].getBBox();
-    rect.setAttribute('x', SVGRect.x);
-    rect.setAttribute('y', SVGRect.y);
-    rect.setAttribute('width', SVGRect.width);
-    rect.setAttribute('height', SVGRect.height);
-    rect.setAttribute('fill', 'yellow');
+  // Attach axis on top of the first leaf datum.
+  var firstEndNode = g.select('.node--leaf');
+  firstEndNode
+    .insert('g')
+    .attr('class', 'xAxis')
+    .attr('transform', 'translate(' + 7 + ',' + -14 + ')')
+    .call(xAxis);
 
-    topNode[0].childNodes[32 + i].insertBefore(
-      rect,
-      topNode[0].childNodes[32 + i].childNodes[0]
+  // tick mark for x-axis
+  firstEndNode
+    .insert('g')
+    .attr('class', 'grid')
+    .attr('transform', 'translate(7,' + (height - 15) + ')')
+    .call(
+      d3
+        .axisBottom()
+        .scale(xScale)
+        .ticks(5)
+        .tickSize(-height, 0, 0)
+        .tickFormat('')
     );
+
+  // Emphasize the y-axis baseline.
+  svg
+    .selectAll('.grid')
+    .select('line')
+    .style('stroke-dasharray', '20,1')
+    .style('stroke', 'black');
+
+  // The moving ball
+  var ballG = svg
+    .insert('g')
+    .attr('class', 'ballG')
+    .attr('transform', 'translate(' + 1100 + ',' + height / 2 + ')');
+  ballG
+    .insert('circle')
+    .attr('class', 'shadow')
+    .style('fill', 'steelblue')
+    .attr('r', 5);
+  ballG
+    .insert('text')
+    .style('text-anchor', 'middle')
+    .attr('dy', 5)
+    .text('0.0');
+
+  // Animation functions for mouse on and off events.
+  d3.selectAll('.node--leaf-g')
+    .on('mouseover', handleMouseOver)
+    .on('mouseout', handleMouseOut);
+
+  function handleMouseOver(d) {
+    var leafG = d3.select(this);
+
+    leafG
+      .select('rect')
+      .attr('stroke', '#4D4D4D')
+      .attr('stroke-width', '2');
+
+    var ballGMovement = ballG
+      .transition()
+      .duration(400)
+      .attr(
+        'transform',
+        'translate(' +
+          (d.y + xScale(d.data.value) + 120) +
+          ',' +
+          (d.x + 1.5) +
+          ')'
+      );
+
+    ballGMovement
+      .select('circle')
+      .style('fill', d.data.color)
+      .attr('r', 18);
+
+    ballGMovement
+      .select('text')
+      .delay(300)
+      .text(Number(d.data.value).toFixed(1));
+  }
+  function handleMouseOut() {
+    var leafG = d3.select(this);
+
+    leafG.select('rect').attr('stroke-width', '0');
   }
 });
+
+function row(d) {
+  return {
+    id: d.id,
+    value: +d.value,
+    color: d.color,
+  };
+}
+
+function responsivefy(svg) {
+  // get container + svg aspect ratio
+  var container = d3.select(svg.node().parentNode),
+    width = parseInt(svg.style('width')),
+    height = parseInt(svg.style('height')),
+    aspect = width / height;
+
+  // add viewBox and preserveAspectRatio properties,
+  // and call resize so that svg resizes on inital page load
+  svg
+    .attr('viewBox', '0 0 ' + width + ' ' + height)
+    .attr('perserveAspectRatio', 'xMinYMid')
+    .call(resize);
+
+  // to register multiple listeners for same event type,
+  // you need to add namespace, i.e., 'click.foo'
+  // necessary if you call invoke this function for multiple svgs
+  // api docs: https://github.com/mbostock/d3/wiki/Selections#on
+  d3.select(window).on('resize.' + container.attr('id'), resize);
+
+  // get width of container and resize svg to fit it
+  function resize() {
+    var targetWidth = parseInt(container.style('width'));
+    svg.attr('width', targetWidth);
+    svg.attr('height', Math.round(targetWidth / aspect));
+  }
+}

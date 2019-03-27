@@ -9,7 +9,7 @@ class ContactMe extends React.Component {
   render() {
     return (
       <div className="contactContainer">
-        <h1 id="form">Keep in Contact!</h1>
+        <h1 id="form">Get in Touch!</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="yourName">Your Name (required)</label>
           <input
