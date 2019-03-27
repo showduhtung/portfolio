@@ -9,7 +9,7 @@ const blogTiles = [
     h2: 'Getting started with Google Vision API on NodeJS (Text Detection)',
     span: 'Getting started with Google Vision API on NodeJS (Text Detection)',
     p:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. ',
   },
   {
     path: '/resources/img/gvisionAPI.jpg',
@@ -19,7 +19,7 @@ const blogTiles = [
     h2: 'Getting started with Google Vision API on NodeJS (Text Detection)',
     span: 'Getting started with Google Vision API on NodeJS (Text Detection)',
     p:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. Quisque sed ante ac arcu rutrum condimentum sed sed mauris.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi rhoncus quam at orci commodo, quis fringilla enim suscipit. ',
   },
 ];
 
@@ -28,7 +28,7 @@ class BlogJS extends React.Component {
     return (
       <div className="blog-topdiv">
         <h1 className="blog-Title">
-          <span>My Shower Thoughts on the Internet</span>
+          <span>shower thoughts on the big web</span>
         </h1>
         <div className="blogcontainer">
           {blogTiles.map(tile => (
@@ -38,7 +38,6 @@ class BlogJS extends React.Component {
               </a>
               <div className="content">
                 <h2>{tile.h2}</h2>
-                <span>{tile.span}</span>
                 <p>{tile.p}</p>
                 <a href={tile.href} target="_blank" rel="noopener noreferrer">
                   <i className="fab fa-medium fa-3x" />

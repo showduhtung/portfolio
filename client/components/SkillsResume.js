@@ -8,9 +8,9 @@ export default class Skills extends React.Component {
   render() {
     return (
       <div className="skills">
-        <h3 id="skills">
-          <span>These Skillz</span>
-        </h3>
+        {/* <h3 className="skillz">
+          <span className="skillz">these skillz</span>
+        </h3> */}
         <svg width="100vw" height="1300" id="skill-chart" />
       </div>
     );

@@ -112,6 +112,7 @@ body {
 }
 
 #aboutMe .MAliQuote {
+  font-style: italic;
   font-weight: bold;
 }
 
@@ -290,7 +291,7 @@ body {
 
 .blogcontainer .card-tiles {
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   height: 40vh;
   width: 30vw;
   border-radius: 0.375em;
@@ -320,7 +321,7 @@ body {
   height: 60%;
   text-align: center;
   bottom: -100%;
-  padding: 20px;
+  padding-bottom: 5em;
   box-sizing: border-box;
   transition: 0.3s;
   background: linear-gradient(0deg, #4b4849, transparent);
@@ -332,8 +333,8 @@ body {
 
 .blogcontainer .card-tiles .content h2 {
   margin: 0 0 10px;
-  /* padding: 0; */
-  padding-bottom: 3emj;
+  /* padding-bottom: 0.5em; */
+  transform: translate(0%, -30%);
   font-size: 20px;
 }
 
@@ -345,6 +346,11 @@ body {
   margin: 0;
   padding: 0;
   font-size: 16px;
+}
+
+.fa-medium {
+  color: white;
+  padding-top: 0.25em;
 }
 
 /*  */
@@ -363,7 +369,7 @@ body {
 
 svg {
   height: auto;
-  width: 100%;
+  width: 95%;
 }
 .link {
   fill: none;

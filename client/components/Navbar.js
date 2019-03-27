@@ -21,6 +21,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
+                textTransform: 'lowercase',
               }}
             >
               <Link
@@ -32,7 +33,7 @@ const NavBar = props => {
                 duration={500}
                 onClick={handleClose}
               >
-                Home
+                home
               </Link>
             </Button>
             <Button
@@ -40,6 +41,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
+                textTransform: 'lowercase',
               }}
             >
               <Link
@@ -59,6 +61,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
+                textTransform: 'lowercase',
               }}
             >
               <Link
@@ -78,6 +81,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
+                textTransform: 'lowercase',
               }}
             >
               <Link
@@ -97,6 +101,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
+                textTransform: 'lowercase',
               }}
             >
               <Link
@@ -116,6 +121,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
+                textTransform: 'lowercase',
               }}
             >
               <Link

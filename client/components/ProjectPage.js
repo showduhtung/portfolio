@@ -6,7 +6,7 @@ function PID2className(pid) {
 const tileData = [
   {
     path: '/resources/img/graceShopper.png',
-    title: 'Grace Shopper',
+    title: 'grace shopper',
     author: 'Flying Irons',
     href: 'https://github.com/Flying-Irons/Grace-Shopper',
     h2: 'Grace Shopper',
@@ -19,7 +19,7 @@ const tileData = [
   },
   {
     path: '/resources/img/IMG_3399.jpg',
-    title: 'Wolfram Beta',
+    title: 'wolfram beta',
     author: 'showduhtung',
     href: 'https://github.com/showduhtung/wolframBeta',
     h2: 'Wolfram Beta',
@@ -33,7 +33,7 @@ const tileData = [
 
   {
     path: '/resources/img/IMG_3301.jpg',
-    title: 'City Snapper',
+    title: 'city snapper',
     author: 'Spied-Limes',
     href: 'https://github.com/spied-limes/CitySnapper',
     h2: 'City Snapper',
@@ -51,7 +51,7 @@ class ProjectPage extends React.Component {
     return (
       <div className="project-page">
         <h1 className="project-Title ">
-          <span> Take a look at some of my work（^_^）</span>
+          <span> take a look at my work!</span>
         </h1>
         <div className="project-container">
           {tileData.map(tile => (
@@ -64,10 +64,10 @@ class ProjectPage extends React.Component {
                 </h2>
                 <div className="bodyofProject">
                   <p className="projectDescripto">
-                    <b>Descrption:</b> {tile.p}
+                    <b>description:</b> {tile.p}
                   </p>
                   <p className="tech">
-                    <b>Tech used:</b> {tile.stack}
+                    <b>tech used:</b> {tile.stack}
                   </p>
                 </div>
               </div>

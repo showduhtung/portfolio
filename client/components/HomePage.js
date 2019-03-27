@@ -10,7 +10,8 @@ export default class HomePage extends React.Component {
         <div className="title1">hello, i'm</div>
         <div className="title2">shaun tung</div>
         <div className="title3">
-          I HATE BEES, BUT I LOVE BEEAUTIFUL SOLUTIONS
+          {/* I HATE BEES, BUT I LOVE BEEAUTIFUL SOLUTIONS */}i hate bees, but i
+          love BEEAUtiful solutions
         </div>
         <div className="thisStings">this stings</div>
         <div className="honeyImHome">honey, I'm home</div>
