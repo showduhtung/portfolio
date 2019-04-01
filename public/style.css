@@ -308,7 +308,7 @@ body {
   overflow: hidden;
   height: 40vh;
   width: 30vw;
-  border-radius: 0.375em;
+  border-radius: 0.15em;
   transition: 0.5s;
   margin: 1em;
   -webkit-text-fill-color: black;
