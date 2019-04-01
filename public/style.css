@@ -82,6 +82,7 @@ body {
   color: white;
   height: 100vh;
   background-color: #c0a257;
+  width: 100vw;
 }
 
 #aboutMe .topAboutMeDiv {
