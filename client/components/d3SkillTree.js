@@ -89,7 +89,10 @@ d3.csv('skillsdata.csv', row, function(error, data) {
     .enter()
     .append('g')
     .attr('class', function(d) {
-      return 'node' + (d.children ? ' node--internal' : ' node--leaf');
+      return (
+        'node' +
+        (d.children ? ' node--internal texting' : ' node--leaf texting')
+      );
     })
     .attr('transform', function(d) {
       return 'translate(' + d.y + ',' + d.x + ')';
@@ -222,10 +225,30 @@ d3.csv('skillsdata.csv', row, function(error, data) {
   }
   function handleMouseOut() {
     var leafG = d3.select(this);
-
     leafG.select('rect').attr('stroke-width', '0');
   }
+  fillWhite();
 });
+function fillWhite() {
+  let topNode = document.getElementsByClassName('topNode');
+  let textElm = topNode[0].getElementsByClassName('texting');
+
+  console.log(textElm, topNode[0].childNodes[32].childNodes);
+
+  for (let i = 0; i < textElm.length; i++) {
+    let rect = document.createElementNS('http://www.w3.org/2000/svg', 'rect');
+    let SVGRect = textElm[i].getBBox();
+    rect.setAttribute('x', SVGRect.x);
+    rect.setAttribute('y', SVGRect.y);
+    rect.setAttribute('width', SVGRect.width);
+    rect.setAttribute('height', SVGRect.height);
+    rect.setAttribute('fill', 'yellow');
+    topNode[0].childNodes[32 + i].insertBefore(
+      rect,
+      topNode[0].childNodes[32 + i].childNodes[0]
+    );
+  }
+}
 
 function row(d) {
   return {

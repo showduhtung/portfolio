@@ -4,8 +4,8 @@
 
 html {
   display: flex;
-  /* font-family: 'Anonymous Pro', monospace; */
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Anonymous Pro', monospace;
+  /* font-family: 'Courier New', Courier, monospace; */
   font-size: 1.5vw;
 }
 
@@ -362,16 +362,20 @@ body {
   padding: 0;
   margin: 0;
   color: white;
-  background-color: #e8c14a;
+  background-color: #722e15;
   height: auto;
   width: 100%;
   position: relative;
 }
-
-svg {
+git svg {
   height: auto;
   width: 95%;
 }
+
+#skill-chart {
+  /* background-color: red; */
+}
+
 .link {
   fill: none;
   stroke: #555;
@@ -386,6 +390,8 @@ text {
 
 .xAxis .tick text {
   fill: black;
+  font-weight: lighter;
+  font-size: 0.5em;
 }
 .grid .tick line {
   stroke: grey;
@@ -442,6 +448,7 @@ text {
 .skills {
   width: 100%;
   height: auto;
+  color: black;
 }
 
 .skills h3 span {
