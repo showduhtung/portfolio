@@ -9,7 +9,7 @@ class AboutMe extends React.Component {
         </div>
         <div className="aboutMeBlurb">
           <h1>
-            <span>who am i?</span>
+            <span>Who Am I?</span>
           </h1>
           <div className="projectparagraph">
             <p>
@@ -17,12 +17,7 @@ class AboutMe extends React.Component {
               projects that truly pushes at the constraints of everyday
               normality. Technology is progressive in nature, and I aim to
               master as many as I can to better the lives of others. I live by
-              Muhammad Ali’s famous quote:
-              {/* Hello, I am Shaun Tung. I am a full-stack developer. I love creating and participating in progressive projects that push the constraints of conventionality.
-
-"Float like a butterfly, sting like a bee." - Muhammad Ali (put the quote in italics rather than bold)
-
-I adapt and always evolve, like a butterfly, to stay ahead with advances in technology. In my work, I am effective and productive like a bee. */}
+              Muhammad Ali’s famous quote: \
             </p>
           </div>
           <p className="MAliQuote">

@@ -91,6 +91,8 @@ body {
 
 #aboutMe .personalPicture {
   width: 100vh;
+  padding: 0;
+  margin: 0;
 }
 #aboutMe .personalPicture .aboutMePicture {
   height: 80%;
