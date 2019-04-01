@@ -86,14 +86,14 @@ const NavBar = props => {
             >
               <Link
                 activeClass="active"
-                to="blog"
+                to="skills"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 onClick={handleClose}
               >
-                Blogs
+                Skills
               </Link>
             </Button>
             <Button
@@ -106,14 +106,14 @@ const NavBar = props => {
             >
               <Link
                 activeClass="active"
-                to="skills"
+                to="blog"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
                 onClick={handleClose}
               >
-                Skills
+                Blogs
               </Link>
             </Button>
             <Button

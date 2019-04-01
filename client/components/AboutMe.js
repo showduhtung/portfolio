@@ -25,7 +25,7 @@ class AboutMe extends React.Component {
           </p> */}
           <p>
             You know the quote
-            <i>"Float like a butterfly, sting like a bee" </i>
+            <i> "Float like a butterfly, sting like a bee" </i>
             by Muhammad Ali? I live by it. I adapt and always evolve, like a
             butterfly, to stay ahead with technological advances. In my work, I
             am effective and productive like a bee.

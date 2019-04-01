@@ -12,7 +12,7 @@ const tileData = [
     h2: 'Grace Shopper',
     span: 'A graceful shopping experience',
     p:
-      'Grace Shopper is a simply designed e-commerce website with the powerful ability to store information on the client-side.',
+      'Grace Shopper is a simply designed e-commerce website with the powerful ability to store session information on the client side.',
     projectId: 1,
     stack:
       'JavaScript, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
@@ -25,7 +25,7 @@ const tileData = [
     h2: 'Wolfram Beta',
     span: 'An interactive problem solver',
     p:
-      'Wolfram Beta is an incredibly powerfully built website capable of solving any mathematical equation. ',
+      'Wolfram Beta is a machine-learning powered website   capable of solving any mathematical equation given via image recognition software. ',
     projectId: 2,
     stack:
       'JavaScript, React, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
@@ -39,10 +39,10 @@ const tileData = [
     h2: 'City Snapper',
     span: 'An interactive tourist adventure',
     p:
-      'An interactive scavenger hunt app for tourists to learn, discover and explore the city as they go along. Built as a serverless mobile app with a cloud-based backend component, this project exemplifies an ideal progressively modern app.',
+      'An interactive scavenger-hunt app to learn, discover and explore the city. Built as a serverless mobile app on the cloud, this project exemplifies an ideal progressive modern app.',
     projectId: 3,
     stack:
-      'JavaScript, React, React Native, HTML5, CSS3, Node, Firebase, Expo, Sequelize, OAuth, Material-UI',
+      'JavaScript, React Native, HTML5, CSS3, Node, Firebase, Expo, Sequelize',
   },
 ];
 

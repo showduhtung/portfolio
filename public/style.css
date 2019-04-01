@@ -7,6 +7,7 @@ html {
   font-family: 'Anonymous Pro', monospace;
   /* font-family: 'Courier New', Courier, monospace; */
   font-size: 1.5vw;
+  float: none;
 }
 
 body {
@@ -153,6 +154,7 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+  position: relative;
 }
 
 .project-page {
@@ -167,7 +169,9 @@ body {
 .project-Title {
   text-align: center;
   margin: 0;
-  padding-top: 3vw;
+  padding-top: 7vh;
+  font-size: 8vh;
+  padding-bottom: 3vh;
 }
 
 .project-Title span {
@@ -179,8 +183,7 @@ body {
 }
 
 .project-container {
-  /* height: 30%; */
-  transform: translate(0, 2%);
+  padding-bottom: 10vh;
 }
 
 .single-project {
@@ -191,19 +194,24 @@ body {
 
 .single-project .leftColumn {
   flex-direction: column;
-  text-align: center;
-  width: 45%;
-  transform: translate(0, -22%);
-  align-items: stretch;
+
+  width: 35%;
+  height: 50vh;
   border-width: 4px;
   border-style: solid;
   border-color: black;
-  margin: 1em;
-  margin-right: 2em;
-  margin-left: 2em;
-  margin-top: 4em;
+  margin-right: 5%;
+  margin-left: 10%;
+  margin-top: 5vh;
 }
 
+.titleOfProject {
+  font-size: 7vh;
+  text-decoration: underline;
+}
+.single-project .leftColumn h2 {
+  text-align: center;
+}
 .single-project .leftColumn span {
   background-color: #e8c14a;
 }
@@ -212,19 +220,22 @@ body {
   background-color: #e8c14a;
 }
 
-.titleOfProject {
-  font-size: 7vh;
-  text-decoration: underline;
+.bodyofProject {
+  text-align: center;
 }
 
-.bodyofProject {
-  padding: 0.5em;
-}
+/* .bodyofProject p {
+  text-align: center;
+  vertical-align: middle;
+} */
 
 .projectDescripto {
-  width: 80%;
-  transform: translate(12%, -40%);
-  border: 1em, black;
+  width: 85%;
+  /* transform: translate(10%); */
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+  /* display:flex */
+  flex-shrink: 2;
 }
 
 .tech {
@@ -234,26 +245,28 @@ body {
 }
 
 .single-project .rightColumn {
-  margin-bottom: 3em;
-  margin-right: 3em;
-  display: flex;
-  width: 50%;
-  height: 45%;
-  left: 5%;
-  background-color: #e8c14a;
   float: right;
-  justify-content: center;
+  width: 40%;
+  height: 50vh;
+  margin-top: 5vh;
+  margin-right: 10%;
+  /* justify-content: center; */
+  border-width: 4px;
+  border-style: solid;
+  border-color: black;
+
+  background-color: #e8c14a;
 }
 .single-project hr {
   color: black;
 }
 .single-project .rightColumn a {
-  width: 99%;
   margin-top: 0.3em;
   margin-bottom: 0.3em;
 }
 .single-project .rightColumn img {
   width: 100%;
+  height: 100%;
 }
 
 /*  */
@@ -263,7 +276,7 @@ body {
 #blog {
   color: black;
   font-style: normal;
-  background-color: #c0a257;
+  background-color: #722e15;
   height: 100vh;
   width: 100%;
   padding: 0;
@@ -272,7 +285,7 @@ body {
 .blog-Title {
   text-align: center;
   margin-top: 0;
-  padding-top: 3vw;
+  padding-top: 7vh;
 }
 
 .blog-Title span {
@@ -362,18 +375,35 @@ body {
   padding: 0;
   margin: 0;
   color: white;
-  background-color: #722e15;
+  background-color: #c0a257;
   height: auto;
   width: 100%;
-  position: relative;
-}
-git svg {
-  height: auto;
-  width: 95%;
+  /* position: relative; */
 }
 
-#skill-chart {
-  /* background-color: red; */
+.skills {
+  padding: 0;
+  margin: 0;
+}
+.skills h1 span {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+}
+
+svg {
+  height: auto;
+  width: 80%;
+  /* background-color: blue; */
+  transform: translate(15%);
+}
+.these-skills {
+  margin: 0;
+  padding: 0;
+  transform: translate(40%, 125%);
+}
+.hover {
+  transform: translate(74.5%, 40%);
 }
 
 .link {
@@ -391,7 +421,7 @@ text {
 .xAxis .tick text {
   fill: black;
   font-weight: lighter;
-  font-size: 0.5em;
+  font-size: 0.7em;
 }
 .grid .tick line {
   stroke: grey;
@@ -412,7 +442,6 @@ text {
   font-family: 'Anonymous Pro', monospace;
   font-weight: bold;
   font-size: 2vw;
-  background-color: white;
   text-decoration: underline;
 }
 
@@ -420,7 +449,6 @@ text {
   font-size: 1vw;
 }
 .node--leaf text {
-  background-color: white;
   fill: black;
   font-family: 'Anonymous Pro', monospace;
   font-weight: bold;
@@ -449,6 +477,8 @@ text {
   width: 100%;
   height: auto;
   color: black;
+  padding: 0;
+  margin: 0;
 }
 
 .skills h3 span {
@@ -460,13 +490,19 @@ text {
 /*  */
 
 #contactMe {
+  padding: 0;
+  margin: 0;
   height: 100vh;
+  background-color: #c0a257;
 }
 .contactContainer {
   width: 60%;
   margin-left: 20%;
+  padding-top: 4vh;
 }
-
+#form span {
+  /* background-color: white; */
+}
 form {
   display: flex;
   flex-direction: column;

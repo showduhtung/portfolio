@@ -31,13 +31,13 @@ ReactDOM.render(
         <div id="projects">
           <ProjectPage />
         </div>
+        <div id="skills">
+          <SkillsResume />
+        </div>
         <div id="blog">
           <BlogJS />
         </div>
-        <div className="skills-resume" id="skills">
-          <SkillsResume />
-        </div>
-        <div className="contact-me" id="contactMe">
+        <div id="contactMe">
           <ContactMe />
         </div>
       </StickyContainer>
