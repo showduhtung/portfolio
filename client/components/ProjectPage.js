@@ -18,7 +18,7 @@ const tileData = [
       'JavaScript, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
   },
   {
-    path: '/resources/img/IMG_3399.jpg',
+    path: '/resources/img/wolframBeta.png',
     title: 'wolfram beta',
     author: 'showduhtung',
     href: 'https://github.com/showduhtung/wolframBeta',
@@ -51,7 +51,7 @@ class ProjectPage extends React.Component {
     return (
       <div className="project-page">
         <h1 className="project-Title ">
-          <span> take a look at my work!</span>
+          <span> Take a Look At My Work!</span>
         </h1>
         <div className="project-container">
           {tileData.map(tile => (
@@ -64,10 +64,10 @@ class ProjectPage extends React.Component {
                 </h2>
                 <div className="bodyofProject">
                   <p className="projectDescripto">
-                    <b>description:</b> {tile.p}
+                    <b>Description:</b> {tile.p}
                   </p>
                   <p className="tech">
-                    <b>tech used:</b> {tile.stack}
+                    <b>Tech Used:</b> {tile.stack}
                   </p>
                 </div>
               </div>

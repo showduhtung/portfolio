@@ -9,7 +9,7 @@ class ContactMe extends React.Component {
   render() {
     return (
       <div className="contactContainer">
-        <h1 id="form">get in touch!</h1>
+        <h1 id="form">Get in Touch!</h1>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="yourName">your name (required)</label>
           <input
@@ -18,28 +18,28 @@ class ContactMe extends React.Component {
             // value={this.state.taskName}
             // onChange={this.handleChange}
           />
-          <label htmlFor="yourEmail">your email (required)</label>
+          <label htmlFor="yourEmail">Your Email (required)</label>
           <input
             type="text"
             name="yourEmail"
             // value={this.state.assignee}
             // onChange={this.handleChange}
           />
-          <label htmlFor="subject">subject</label>
+          <label htmlFor="subject">Subject</label>
           <input
             type="text"
             name="subject"
             // value={this.state.taskName}
             // onChange={this.handleChange}
           />
-          <label htmlFor="yourMessage">your message</label>
+          <label htmlFor="yourMessage">Your Message</label>
           <input
             type="text"
             name="yourMessage"
             // value={this.state.assignee}
             // onChange={this.handleChange}
           />
-          <button type="submit">submit</button>
+          <button type="submit">Submit</button>
         </form>
       </div>
     );

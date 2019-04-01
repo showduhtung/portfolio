@@ -366,7 +366,8 @@ body {
   width: 100%;
   position: relative;
 }
-git svg {
+
+svg {
   height: auto;
   width: 95%;
 }
