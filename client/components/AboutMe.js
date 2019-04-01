@@ -17,7 +17,7 @@ class AboutMe extends React.Component {
               projects that truly pushes at the constraints of everyday
               normality. Technology is progressive in nature, and I aim to
               master as many as I can to better the lives of others. I live by
-              Muhammad Ali’s famous quote: \
+              Muhammad Ali’s famous quote:
             </p>
           </div>
           <p className="MAliQuote">

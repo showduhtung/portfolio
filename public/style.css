@@ -10,6 +10,7 @@ html {
 
 body {
   margin: 0;
+  padding: 0;
 }
 
 /*  */
@@ -80,7 +81,7 @@ body {
 
 #aboutMe {
   color: white;
-  height: 100vh;
+  height: auto;
   background-color: #c0a257;
   width: 100vw;
 }
