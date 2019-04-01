@@ -80,10 +80,15 @@ body {
 /* */
 
 #aboutMe {
-  color: white;
+  /* color: white;
   height: auto;
   background-color: #c0a257;
-  width: 100vw;
+  width: 100vw; */
+  height: auto;
+  background-color: #c0a257;
+  padding: 0;
+  margin: 0;
+  width: 100%;
 }
 
 #aboutMe .topAboutMeDiv {
@@ -156,15 +161,6 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
-}
-
-.project-page {
-  /* color: white; */
-
-  /* height: auto; */
-  /* width: 100vh; */
-  /* height: 100vh; */
-  /* position: relative; */
 }
 
 .project-Title {
