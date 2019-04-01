@@ -21,7 +21,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
-                textTransform: 'lowercase',
+                // textTransform: 'lowercase',
               }}
             >
               <Link
@@ -33,7 +33,7 @@ const NavBar = props => {
                 duration={500}
                 onClick={handleClose}
               >
-                home
+                Home
               </Link>
             </Button>
             <Button
@@ -41,7 +41,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
-                textTransform: 'lowercase',
+                // textTransform: 'lowercase',
               }}
             >
               <Link
@@ -61,7 +61,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
-                textTransform: 'lowercase',
+                // textTransform: 'lowercase',
               }}
             >
               <Link
@@ -81,7 +81,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
-                textTransform: 'lowercase',
+                // textTransform: 'lowercase',
               }}
             >
               <Link
@@ -101,7 +101,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
-                textTransform: 'lowercase',
+                // textTransform: 'lowercase',
               }}
             >
               <Link
@@ -121,7 +121,7 @@ const NavBar = props => {
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
                 color: '#e8c14a',
-                textTransform: 'lowercase',
+                // textTransform: 'lowercase',
               }}
             >
               <Link

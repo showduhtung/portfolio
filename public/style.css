@@ -4,13 +4,13 @@
 
 html {
   display: flex;
-  font-family: 'Anonymous Pro', monospace;
+  /* font-family: 'Anonymous Pro', monospace; */
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.5vw;
 }
 
 body {
   margin: 0;
-  padding: 0;
 }
 
 /*  */
@@ -80,15 +80,9 @@ body {
 /* */
 
 #aboutMe {
-  /* color: white;
-  height: auto;
+  color: white;
+  height: 100vh;
   background-color: #c0a257;
-  width: 100vw; */
-  height: auto;
-  background-color: #c0a257;
-  padding: 0;
-  margin: 0;
-  width: 100%;
 }
 
 #aboutMe .topAboutMeDiv {
@@ -98,8 +92,6 @@ body {
 
 #aboutMe .personalPicture {
   width: 100vh;
-  padding: 0;
-  margin: 0;
 }
 #aboutMe .personalPicture .aboutMePicture {
   height: 80%;
@@ -161,6 +153,15 @@ body {
   padding: 0;
   margin: 0;
   width: 100%;
+}
+
+.project-page {
+  /* color: white; */
+
+  /* height: auto; */
+  /* width: 100vh; */
+  /* height: 100vh; */
+  /* position: relative; */
 }
 
 .project-Title {

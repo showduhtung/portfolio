@@ -6,7 +6,7 @@ function PID2className(pid) {
 const tileData = [
   {
     path: '/resources/img/graceShopper.png',
-    title: 'grace shopper',
+    title: 'Grace Shopper',
     author: 'Flying Irons',
     href: 'https://github.com/Flying-Irons/Grace-Shopper',
     h2: 'Grace Shopper',
@@ -19,7 +19,7 @@ const tileData = [
   },
   {
     path: '/resources/img/wolframBeta.png',
-    title: 'wolfram beta',
+    title: 'Wolfram Beta',
     author: 'showduhtung',
     href: 'https://github.com/showduhtung/wolframBeta',
     h2: 'Wolfram Beta',
@@ -33,7 +33,7 @@ const tileData = [
 
   {
     path: '/resources/img/IMG_3301.jpg',
-    title: 'city snapper',
+    title: 'City Snapper',
     author: 'Spied-Limes',
     href: 'https://github.com/spied-limes/CitySnapper',
     h2: 'City Snapper',
