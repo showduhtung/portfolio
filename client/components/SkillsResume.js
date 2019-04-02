@@ -13,7 +13,7 @@ export default class Skills extends React.Component {
         </h1>
         <h3 className="hover">(Hover over skills)</h3>
         <h5 className="hover2">
-          (please refresh if entire table is not in view)
+          (please refresh until entire table is in view)
         </h5>
 
         <div>
