@@ -28,7 +28,7 @@ class BlogJS extends React.Component {
     return (
       <div className="blog-topdiv">
         <h1 className="blog-Title">
-          <span>Shower Thoughts On The Big Web</span>
+          <span>Shower Thoughts on the Big Web</span>
         </h1>
         <div className="blogcontainer">
           {blogTiles.map(tile => (

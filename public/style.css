@@ -4,8 +4,8 @@
 
 html {
   display: flex;
-  font-family: 'Anonymous Pro', monospace;
-  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-family: 'Anonymous Pro', monospace; */
+  font-family: 'Courier New', Courier, monospace;
   font-size: 1.5vw;
   float: none;
 }
@@ -26,6 +26,7 @@ body {
   align-items: center;
   background-color: #e8c14a;
   background-size: cover;
+  font-family: 'Anonymous Pro', monospace;
 }
 
 #homePage .title1 {
@@ -111,6 +112,8 @@ body {
 
 .aboutMeBlurb h1 span {
   background-color: white;
+  padding-left: 0.1em;
+  font-size: 8vh;
 }
 
 #aboutMe .MAliQuote {
@@ -206,7 +209,7 @@ body {
 }
 
 .titleOfProject {
-  font-size: 7vh;
+  font-size: 5vh;
   text-decoration: underline;
 }
 .single-project .leftColumn h2 {
@@ -235,7 +238,8 @@ body {
   margin-left: 7.5%;
   margin-right: 7.5%;
   /* display:flex */
-  flex-shrink: 2;
+  /* flex-shrink: 2;*/
+  font-size: 2.5vh;
 }
 
 .tech {
@@ -250,11 +254,9 @@ body {
   height: 50vh;
   margin-top: 5vh;
   margin-right: 10%;
-  /* justify-content: center; */
   border-width: 4px;
   border-style: solid;
   border-color: black;
-
   background-color: #e8c14a;
 }
 .single-project hr {
@@ -289,7 +291,8 @@ body {
 }
 
 .blog-Title span {
-  background-color: white;
+  background-color: #e8c14a;
+  font-size: 7vh;
 }
 
 #blog .blogcontainer {
@@ -384,11 +387,12 @@ body {
 .skills {
   padding: 0;
   margin: 0;
+  /* text-align: center; */
 }
 .skills h1 span {
   background-color: white;
-  margin: 0;
-  padding: 0;
+  padding-left: 0.1em;
+  font-size: 8vh;
 }
 
 svg {
@@ -396,14 +400,18 @@ svg {
   width: 80%;
   /* background-color: blue; */
   transform: translate(15%);
+  /* padding-right: 10%; */
 }
 .these-skills {
   margin: 0;
   padding: 0;
-  transform: translate(40%, 125%);
+  transform: translate(33%, 105%);
 }
 .hover {
   transform: translate(74.5%, 40%);
+}
+.hover2 {
+  transform: translate(61%, 40%);
 }
 
 .link {
@@ -439,7 +447,7 @@ text {
   fill: #555;
 }
 .node--internal text {
-  font-family: 'Anonymous Pro', monospace;
+  /* font-family: 'Anonymous Pro', monospace; */
   font-weight: bold;
   font-size: 2vw;
   text-decoration: underline;
@@ -449,8 +457,8 @@ text {
   font-size: 1vw;
 }
 .node--leaf text {
-  fill: black;
-  font-family: 'Anonymous Pro', monospace;
+  fill: #e8c14a;
+  /* font-family: 'Anonymous Pro', monospace; */
   font-weight: bold;
 }
 
@@ -499,9 +507,16 @@ text {
   width: 60%;
   margin-left: 20%;
   padding-top: 4vh;
+  justify-items: center;
+  align-content: center;
 }
-#form span {
-  /* background-color: white; */
+.contactBlurb {
+  transform: translate(23%);
+}
+.contactBlurb span {
+  background-color: white;
+  font-size: 8vh;
+  padding-left: 0.1em;
 }
 form {
   display: flex;

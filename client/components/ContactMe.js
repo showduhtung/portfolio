@@ -9,9 +9,11 @@ class ContactMe extends React.Component {
   render() {
     return (
       <div className="contactContainer">
-        <h1 id="form">
-          <span>Get in Touch!</span>
-        </h1>
+        <div className="contactBlurb">
+          <h1>
+            <span>Get in Touch!</span>
+          </h1>
+        </div>
         <form onSubmit={this.handleSubmit}>
           <label htmlFor="yourName">Your name (required)</label>
           <input

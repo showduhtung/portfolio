@@ -4,7 +4,7 @@ var svg = d3.select('svg').call(responsivefy),
   height = +svg.attr('height'),
   g = svg
     .append('g')
-    .attr('transform', 'translate(90,0)') // move right 200px.
+    .attr('transform', 'translate(50,0)') // move right 200px.
     .attr('class', 'topNode');
 
 // x-scale and x-axis
@@ -14,7 +14,7 @@ var experienceName = [
   'Alright 2.0',
   'Handy 3.0',
   'Expert 4.0',
-  'Guru 5.0',
+  // 'Guru 5.0',
 ];
 var formatSkillPoints = function(d) {
   return experienceName[d % 6];
@@ -108,9 +108,11 @@ d3.csv('skillsdata.csv', row, function(error, data) {
   leafNodeG
     .append('rect')
     .attr('class', 'shadow')
-    .style('fill', function(d) {
-      return d.data.color;
-    })
+    .style(
+      'fill',
+      'black'
+      // function(d) {  return d.data.color;}
+    )
     .attr('width', 2)
     .attr('height', 30)
     .attr('rx', 2)
@@ -212,7 +214,11 @@ d3.csv('skillsdata.csv', row, function(error, data) {
 
     ballGMovement
       .select('circle')
-      .style('fill', d.data.color)
+      .style(
+        'fill',
+        'black'
+        // d.data.color
+      )
       .attr('r', 18);
 
     ballGMovement

@@ -9,7 +9,7 @@ class AboutMe extends React.Component {
         </div>
         <div className="aboutMeBlurb">
           <h1>
-            <span>Who Am I?</span>
+            <span>Who am I?</span>
           </h1>
           <div className="projectparagraph">
             <p>
