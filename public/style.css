@@ -4,8 +4,10 @@
 
 html {
   display: flex;
-  /* font-family: 'Anonymous Pro', monospace; */
-  font-family: 'Courier New', Courier, monospace;
+  /* font-family: 'Anonymous Pro', monospace; garage gothic,  bodoni, brandon grotesque*/
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-family: 'Brandon Grotesque'; */
+  font-family: 'Anonymous Pro', monospace;
   font-size: 1.5vw;
   float: none;
 }
@@ -26,7 +28,8 @@ body {
   align-items: center;
   background-color: #e8c14a;
   background-size: cover;
-  font-family: 'Anonymous Pro', monospace;
+  font-family: 'Montserrat, Calibri';
+  /* font-family: 'Anonymous Pro', monospace; */
 }
 
 #homePage .title1 {
@@ -103,7 +106,7 @@ body {
 }
 #aboutMe .aboutMeBlurb {
   float: right;
-  font-size: 3.6vh;
+  font-size: 3vh;
   padding-left: 10vh;
   padding-top: 6vh;
   padding-right: 15vh;
@@ -111,7 +114,8 @@ body {
 }
 
 .aboutMeBlurb h1 span {
-  background-color: white;
+  background-color: black;
+  color: #c0a257;
   padding-left: 0.1em;
   font-size: 8vh;
 }

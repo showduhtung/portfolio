@@ -43,7 +43,9 @@ class ContactMe extends React.Component {
             // value={this.state.assignee}
             // onChange={this.handleChange}
           />
-          <button type="submit">Submit</button>
+          <button type="submit" style={{}}>
+            Submit
+          </button>
         </form>
       </div>
     );
