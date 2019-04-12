@@ -64,7 +64,8 @@ body {
 
 #homePage .honeyImHome {
   font-size: 2vw;
-  transform: translate(100%, 400%);
+  transform: translate(150%, 250%);
+  float: right;
 }
 
 /*  */
@@ -402,7 +403,7 @@ body {
 .skills h1 span {
   background-color: white;
   padding-left: 0.1em;
-  font-size: 8vh;
+  font-size: 7vh;
 }
 
 svg {
@@ -410,19 +411,22 @@ svg {
   width: 80%;
   /* background-color: blue; */
   transform: translate(15%);
-  /* padding-right: 10%; */
+  /* padding-bottom: 5%; */
 }
 
 .these-skills {
   margin: 0;
   padding: 0;
-  transform: translate(33%, 105%);
+  float: right;
+  transform: translate(-150%, 105%);
 }
 .hover {
   transform: translate(74.5%, 40%);
+  float: right;
 }
 .hover2 {
-  transform: translate(61%, 40%);
+  transform: translate(144%, 200%);
+  float: right;
 }
 
 .link {

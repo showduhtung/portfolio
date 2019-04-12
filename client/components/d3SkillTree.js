@@ -4,7 +4,7 @@ var svg = d3.select('svg').call(responsivefy),
   height = +svg.attr('height'),
   g = svg
     .append('g')
-    .attr('transform', 'translate(50,0)') // move right 200px.
+    .attr('transform', 'translate(70,0)') // move right 200px.
     .attr('class', 'topNode');
 
 // x-scale and x-axis
