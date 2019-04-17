@@ -15,7 +15,7 @@ const tileData = [
       'Grace Shopper is a simply designed e-commerce website with the powerful ability to store session information on the client side.',
     projectId: 1,
     stack:
-      'JavaScript, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
+      'JavaScript, React, Redux, HTML5, CSS3, NodeJS, Express, AJAX, PostgreSQL, Bootstrap, Session Storage',
   },
   {
     path: '/resources/img/wolframBeta.png',
@@ -27,12 +27,11 @@ const tileData = [
     p:
       'Wolfram Beta is a machine-learning powered website   capable of solving any mathematical equation given via image recognition software. ',
     projectId: 2,
-    stack:
-      'JavaScript, React, HTML5, CSS3, Node, Express, AJAX, PostgreSQL, Sequelize, OAuth, Material-UI',
+    stack: 'JavaScript, React, HTML5, CSS3, Google Vision, NodeJS, Material-UI',
   },
 
   {
-    path: '/resources/img/IMG_3301.jpg',
+    path: '/resources/img/City Snapper.jpg',
     title: 'City Snapper',
     author: 'Spied-Limes',
     href: 'https://github.com/spied-limes/CitySnapper',
@@ -42,7 +41,7 @@ const tileData = [
       'An interactive scavenger-hunt app to learn, discover and explore the city. Built as a serverless mobile app on the cloud, this project exemplifies an ideal progressive modern app.',
     projectId: 3,
     stack:
-      'JavaScript, React Native, HTML5, CSS3, Node, Firebase, Expo, Sequelize',
+      'JavaScript, React Native, HTML5, CSS3, NodeJS, Firebase, Expo, Sequelize',
   },
 ];
 
@@ -73,7 +72,7 @@ class ProjectPage extends React.Component {
               </div>
               <div className="rightColumn">
                 <a href={tile.href} target="_blank" rel="noopener noreferrer">
-                  <img className="project2" src={tileData[0].path} />
+                  <img className="project2" src={tile.path} />
                 </a>
               </div>
             </div>

@@ -408,10 +408,11 @@ body {
 
 svg {
   height: auto;
-  width: 80%;
+  width: 75%;
   /* background-color: blue; */
   transform: translate(15%);
   /* padding-bottom: 5%; */
+  padding-top: 5%;
 }
 
 .these-skills {
@@ -421,12 +422,13 @@ svg {
   transform: translate(-150%, 105%);
 }
 .hover {
-  transform: translate(74.5%, 40%);
+  transform: translate(67%, 280%);
   float: right;
 }
 .hover2 {
-  transform: translate(144%, 200%);
+  transform: translate(153%, 800%);
   float: right;
+  font-size: 2vh;
 }
 
 .link {
