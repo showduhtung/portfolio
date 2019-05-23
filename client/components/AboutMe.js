@@ -5,7 +5,7 @@ class AboutMe extends React.Component {
     return (
       <div className="topAboutMeDiv">
         <div className="personalPicture">
-          <img src="myPortfolio.jpg" className="aboutMePicture" />
+          <img src="myPortfolio.png" className="aboutMePicture" />
         </div>
         <div className="aboutMeBlurb">
           <h1>

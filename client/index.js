@@ -34,9 +34,9 @@ ReactDOM.render(
         <div id="skills">
           <SkillsResume />
         </div>
-        <div id="blog">
+        {/* <div id="blog">
           <BlogJS />
-        </div>
+        </div> */}
         <div id="contactMe">
           <ContactMe />
         </div>

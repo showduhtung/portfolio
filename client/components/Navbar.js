@@ -96,7 +96,7 @@ const NavBar = props => {
                 Skills
               </Link>
             </Button>
-            <Button
+            {/* <Button
               style={{
                 fontSize: '0.20em',
                 fontFamily: 'Anonymous Pro',
@@ -115,7 +115,7 @@ const NavBar = props => {
               >
                 Blogs
               </Link>
-            </Button>
+            </Button> */}
             <Button
               style={{
                 fontSize: '0.20em',

@@ -27,7 +27,7 @@ const tileData = [
     p:
       'Wolfram Beta is a machine-learning powered website   capable of solving any mathematical equation given via image recognition software. ',
     projectId: 2,
-    stack: 'JavaScript, React, HTML5, CSS3, Google Vision, NodeJS, Material-UI',
+    stack: 'JavaScript, React, HTML5, CSS3, Google Vision, NodeJS',
   },
 
   {
@@ -41,7 +41,21 @@ const tileData = [
       'An interactive scavenger-hunt app to learn, discover and explore the city. Built as a serverless mobile app on the cloud, this project exemplifies an ideal progressive modern app.',
     projectId: 3,
     stack:
-      'JavaScript, React Native, HTML5, CSS3, NodeJS, Firebase, Expo, Sequelize',
+      'JavaScript, React Native, HTML5, CSS3, NodeJS, Firebase, Expo, Mapbox',
+  },
+
+  {
+    path: '/resources/img/accounted4.png',
+    title: 'Accounted4',
+    author: 'sxs',
+    href: 'https://accounted-for.herokuapp.com/',
+    h2: 'Accounted4',
+    span: 'accounted4',
+    p:
+      'A habit building app designed to keep friends accounted for. Each user can find their friends via username and create a list of habits to keep together.',
+    projectId: 4,
+    stack:
+      'JavaScript, React, React Hooks, ApolloJS, Django, GraphQL, Graphene, Node.js, Material-UI, Moment.js, Webpack, Local Storage',
   },
 ];
 

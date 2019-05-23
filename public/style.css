@@ -408,10 +408,10 @@ body {
 
 svg {
   height: auto;
-  width: 75%;
+  width: 100%;
   /* background-color: blue; */
-  transform: translate(15%);
-  /* padding-bottom: 5%; */
+  /* transform: translate(15%); */
+  padding-bottom: 5%;
   padding-top: 5%;
 }
 
@@ -421,10 +421,12 @@ svg {
   float: right;
   transform: translate(-150%, 105%);
 }
+
 .hover {
   transform: translate(67%, 280%);
   float: right;
 }
+
 .hover2 {
   transform: translate(153%, 800%);
   float: right;
@@ -515,10 +517,12 @@ text {
 /*  */
 
 #contactMe {
+  height: 100vh;
+  width: 100%;
   padding: 0;
   margin: 0;
-  height: 100vh;
-  background-color: #c0a257;
+  /* background-color: #c0a257; */
+  background-color: #e8c14a;
 }
 .contactContainer {
   width: 60%;
